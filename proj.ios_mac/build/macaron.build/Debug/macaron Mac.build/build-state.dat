@@ -1,0 +1,952 @@
+Tmacaron Mac
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Info.plist /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Info.plist
+cCpResource /Users/yup/Documents/workspace/macaron/Resources/CloseNormal.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseNormal.png
+cCpResource mac/Icon.icns /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/Icon.icns
+cCpResource /Users/yup/Documents/workspace/macaron/Resources/CloseSelected.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseSelected.png
+cCpResource /Users/yup/Documents/workspace/macaron/Resources/HelloWorld.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/HelloWorld.png
+cProcessPCH++ /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.pch mac/Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/AppDelegate.o /Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/HelloWorldScene.o /Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/main.o /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/MacOS/macaron\ Mac normal x86_64
+cTouch /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000053721470000000000000044C
+t1399985264
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005372147000000000000001DE
+t1399985264
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000537214710000000000095820
+t1399985265
+s612384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+c00000000537214710000000000268434
+t1399985265
+s2524212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c0000000053721471000000000002848C
+t1399985265
+s165004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000053721471000000000008B334
+t1399985265
+s570164
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005372147100000000000C9E38
+t1399985265
+s826936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+c0000000053721472000000000004426C
+t1399985266
+s279148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c0000000053721472000000000000A564
+t1399985266
+s42340
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c0000000053721473000000000000BB7C
+t1399985267
+s47996
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000537214730000000000055BC0
+t1399985267
+s351168
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libcurl.dylib
+c0000000053721477000000000000A4C8
+t1399985271
+s42184
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib
+c000000005372147700000000000044B8
+t1399985271
+s17592
+
+N/Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp
+c0000000053DF958C0000000000000556
+t1407161740
+s1366
+
+N/Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp
+c0000000053DF958C0000000000000AAD
+t1407161740
+s2733
+
+N/Users/yup/Documents/workspace/macaron/Resources/CloseNormal.png
+c0000000053DF958D00000000000018A7
+t1407161741
+s6311
+
+N/Users/yup/Documents/workspace/macaron/Resources/CloseSelected.png
+c0000000053DF958D000000000000157B
+t1407161741
+s5499
+
+N/Users/yup/Documents/workspace/macaron/Resources/HelloWorld.png
+c0000000053DF958D0000000000021E19
+t1407161741
+s138777
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/libCocosDenshion Mac.a
+c0000000053E30F4F000000000006BFA8
+t1407389519
+s442280
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/libbox2d Mac.a
+c0000000053E30EC300000000001E6A70
+t1407389379
+s1993328
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/libchipmunk Mac.a
+c0000000053E30EC300000000000C5330
+t1407389379
+s807728
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/libcocos2dx Mac.a
+c0000000053E30F430000000011811F30
+t1407389507
+s293674800
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/libcocos2dx-extensions Mac.a
+c0000000053E30F4E0000000001A4BCD8
+t1407389518
+s27573464
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app
+t1407389519
+s102
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Info.plist
+t1407389519
+s1543
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/MacOS/macaron Mac
+t1407389522
+s9504716
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/PkgInfo
+t1407389519
+s8
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/CloseNormal.png
+t1407389519
+s6311
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/CloseSelected.png
+t1407389519
+s5499
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/HelloWorld.png
+t1407389519
+s138777
+
+N/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/Icon.icns
+t1407389519
+s716318
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/AppDelegate.o
+t1407389521
+s1578760
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/HelloWorldScene.o
+t1407389522
+s1999244
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/macaron Mac.LinkFileList
+c0000000053E30F4F0000000000000189
+t1407389519
+s393
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/main.o
+t1407389521
+s41208
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Icon.icns
+c0000000053DF958C00000000000AEE1E
+t1407161740
+s716318
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Info.plist
+c0000000053DF958C000000000000047E
+t1407161740
+s1150
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Prefix.pch
+c0000000053DF958C0000000000000092
+t1407161740
+s146
+
+N/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp
+c0000000053DF958C0000000000000593
+t1407161740
+s1427
+
+N/var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.pch
+t1407389519
+s124740
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescf10e6cf4693b941^b7b4e6cf4693b941^---0#1#1#--18"Check dependencies36"F1CC9FF5-788E-450A-A054-FD57AFDC03BB-
+
+CCompileC build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/AppDelegate.o /Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s429082319.932574
+e429082321.856761
+r1
+xCompileC
+xbuild/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp
+d/Users/yup/Documents/workspace/macaron/Classes/AppDelegate.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/cocos2d.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccConfig.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCPlatformConfig.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCRef.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCPlatformMacros.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCPlatformDefine.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCRefPtr.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccMacros.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCConsole.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCStdC.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCVector.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCAutoreleasePool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCNS.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCGeometry.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCMath.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec2.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCMathBase.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec2.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec3.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec3.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Mat4.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec4.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec4.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Mat4.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Quaternion.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Quaternion.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCData.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCValue.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccTypes.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCGL.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCConfiguration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCDirector.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAtlasNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventDispatcher.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListener.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEvent.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCScriptSupport.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCCommon.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventKeyboard.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCProtocols.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTexture2D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCAffineTransform.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/ccGLStateCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCQuadCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgramState.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderCommandPool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCScheduler.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/uthash.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/base64.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ZipUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCProfiling.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccUTF8.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCUserDefault.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCIMEDelegate.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCIMEDispatcher.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventType.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerKeyboard.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerMouse.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventMouse.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventAcceleration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerAcceleration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventCustom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerCustom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventFocus.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerFocus.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/MathUtil.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/MathUtil.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCVertex.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAction.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionInterval.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteFrame.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAnimation.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionCamera.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionManager.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionEase.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionPageTurn3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionGrid3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionInstant.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionProgressTimer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionTiledGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionTween.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionCatmullRom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTweenFunction.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCDrawingPrimitives.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCDrawNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCCustomCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelTTF.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelBMFont.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabel.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteBatchNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTextureAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCBatchCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgram.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFontAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFontFNT.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFont.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsWorld.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCScene.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransition.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransitionPageTurn.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransitionProgress.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMenu.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMenuItem.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCClippingNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGroupCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMotionStreak.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCProgressTimer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSprite.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsBody.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsShape.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCRenderTexture.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCImage.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCNodeGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleBatchNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleSystem.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCString.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCArray.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccCArray.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCDataVisitor.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleExamples.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleSystemQuad.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCGrabber.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgramCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/ccShaders.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTextureCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsContact.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsJoint.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCDevice.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCFileUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCSAXParser.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCThread.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCApplication.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCApplicationProtocol.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/desktop/CCGLView.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCGLViewProtocol.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/external/glfw3/include/mac/glfw3.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAnimationCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteFrameCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTextFieldTTF.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParallaxNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXObjectGroup.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXXMLParser.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXTiledMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTileMapAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFastTMXTiledMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFastTMXLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCComponent.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCComponentContainer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCSprite3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCMeshCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCMesh.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCBundle3DData.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCMeshSkin.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimate3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimation3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimationCurve.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimationCurve.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCSprite3DMaterial.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/audio/include/SimpleAudioEngine.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/audio/include/Export.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDictionary.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCSet.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCInteger.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCFloat.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDouble.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCBool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCNotificationCenter.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDeprecated.h
+d/Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp230"[1mCompileC[0m build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/AppDelegate.o [1m/Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerb7d3eecf4693b941^0056dbd14693b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp0000000000000000^3805"[1mCompileC[0m build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/AppDelegate.o [1m/Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DUSE_FILE32API -DCC_TARGET_OS_MAC -DCOCOS2D_DEBUG=1 -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/macaron\ Mac.hmap -I/Users/yup/Documents/workspace/macaron/bin/debug/mac/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/base -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/physics -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/math -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/ui -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/network -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/audio/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/editor-support -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/extensions -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/chipmunk/include/chipmunk -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/platform/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/glfw3/include/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources/x86_64 -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources -F/Users/yup/Documents/workspace/macaron/bin/debug/mac -include /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch -MMD -MT dependencies -MF /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/AppDelegate.d --serialize-diagnostics /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/AppDelegate.dia -c /Users/yup/Documents/workspace/macaron/Classes/AppDelegate.cpp -o /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/AppDelegate.o36"6DB1E686-6C91-4603-A162-B532DED4CCBF-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CCompileC build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/HelloWorldScene.o /Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s429082319.932787
+e429082322.106381
+r1
+xCompileC
+xbuild/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/HelloWorldScene.o
+x/Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp
+d/Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/cocos2d.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccConfig.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCPlatformConfig.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCRef.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCPlatformMacros.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCPlatformDefine.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCRefPtr.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccMacros.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCConsole.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCStdC.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCVector.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCAutoreleasePool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCNS.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCGeometry.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCMath.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec2.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCMathBase.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec2.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec3.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec3.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Mat4.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec4.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec4.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Mat4.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Quaternion.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Quaternion.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCData.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCValue.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccTypes.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCGL.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCConfiguration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCDirector.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAtlasNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventDispatcher.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListener.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEvent.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCScriptSupport.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCCommon.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventKeyboard.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCProtocols.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTexture2D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCAffineTransform.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/ccGLStateCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCQuadCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgramState.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderCommandPool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCScheduler.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/uthash.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/base64.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ZipUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCProfiling.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccUTF8.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCUserDefault.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCIMEDelegate.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCIMEDispatcher.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventType.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerKeyboard.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerMouse.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventMouse.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventAcceleration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerAcceleration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventCustom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerCustom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventFocus.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerFocus.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/MathUtil.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/MathUtil.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCVertex.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAction.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionInterval.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteFrame.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAnimation.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionCamera.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionManager.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionEase.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionPageTurn3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionGrid3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionInstant.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionProgressTimer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionTiledGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionTween.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionCatmullRom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTweenFunction.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCDrawingPrimitives.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCDrawNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCCustomCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelTTF.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelBMFont.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabel.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteBatchNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTextureAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCBatchCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgram.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFontAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFontFNT.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFont.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsWorld.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCScene.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransition.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransitionPageTurn.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransitionProgress.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMenu.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMenuItem.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCClippingNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGroupCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMotionStreak.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCProgressTimer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSprite.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsBody.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsShape.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCRenderTexture.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCImage.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCNodeGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleBatchNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleSystem.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCString.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCArray.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccCArray.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCDataVisitor.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleExamples.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleSystemQuad.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCGrabber.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgramCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/ccShaders.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTextureCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsContact.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsJoint.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCDevice.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCFileUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCSAXParser.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCThread.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCApplication.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCApplicationProtocol.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/desktop/CCGLView.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCGLViewProtocol.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/external/glfw3/include/mac/glfw3.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAnimationCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteFrameCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTextFieldTTF.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParallaxNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXObjectGroup.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXXMLParser.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXTiledMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTileMapAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFastTMXTiledMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFastTMXLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCComponent.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCComponentContainer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCSprite3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCMeshCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCMesh.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCBundle3DData.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCMeshSkin.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimate3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimation3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimationCurve.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimationCurve.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCSprite3DMaterial.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/audio/include/SimpleAudioEngine.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/audio/include/Export.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDictionary.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCSet.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCInteger.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCFloat.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDouble.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCBool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCNotificationCenter.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDeprecated.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp238"[1mCompileC[0m build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/HelloWorldScene.o [1m/Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler43e6eecf4693b941^0c3c1bd24693b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp0000000000000000^3829"[1mCompileC[0m build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/HelloWorldScene.o [1m/Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DUSE_FILE32API -DCC_TARGET_OS_MAC -DCOCOS2D_DEBUG=1 -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/macaron\ Mac.hmap -I/Users/yup/Documents/workspace/macaron/bin/debug/mac/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/base -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/physics -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/math -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/ui -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/network -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/audio/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/editor-support -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/extensions -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/chipmunk/include/chipmunk -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/platform/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/glfw3/include/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources/x86_64 -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources -F/Users/yup/Documents/workspace/macaron/bin/debug/mac -include /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch -MMD -MT dependencies -MF /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/HelloWorldScene.d --serialize-diagnostics /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/HelloWorldScene.dia -c /Users/yup/Documents/workspace/macaron/Classes/HelloWorldScene.cpp -o /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/HelloWorldScene.o36"FD4ED2E6-FD0C-41C0-B401-D6FAAB185BB4-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CCompileC build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/main.o /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s429082319.933009
+e429082321.493513
+r1
+xCompileC
+xbuild/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/main.o
+x/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp
+d/Users/yup/Documents/workspace/macaron/Classes/AppDelegate.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/cocos2d.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccConfig.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCPlatformConfig.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCRef.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCPlatformMacros.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCPlatformDefine.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCRefPtr.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccMacros.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCConsole.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCStdC.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCVector.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCAutoreleasePool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCNS.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCGeometry.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCMath.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec2.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCMathBase.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec2.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec3.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec3.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Mat4.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec4.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Vec4.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Mat4.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Quaternion.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/Quaternion.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCData.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCValue.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccTypes.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCGL.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCConfiguration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCDirector.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAtlasNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventDispatcher.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListener.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEvent.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCScriptSupport.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCCommon.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventKeyboard.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCProtocols.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTexture2D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCAffineTransform.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/ccGLStateCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCQuadCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgramState.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderCommandPool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCScheduler.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/uthash.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/base64.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ZipUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCProfiling.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccUTF8.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCUserDefault.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCIMEDelegate.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCIMEDispatcher.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventType.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerTouch.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerKeyboard.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerMouse.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventMouse.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventAcceleration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerAcceleration.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventCustom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerCustom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventFocus.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCEventListenerFocus.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/MathUtil.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/MathUtil.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/math/CCVertex.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAction.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionInterval.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteFrame.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAnimation.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionCamera.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionManager.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionEase.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionPageTurn3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionGrid3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionInstant.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionProgressTimer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionTiledGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionTween.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCActionCatmullRom.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTweenFunction.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCDrawingPrimitives.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCDrawNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCCustomCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelTTF.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabelBMFont.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLabel.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteBatchNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTextureAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCBatchCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgram.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFontAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFontFNT.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFont.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsWorld.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCScene.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransition.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransitionPageTurn.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTransitionProgress.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMenu.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMenuItem.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCClippingNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGroupCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCMotionStreak.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCProgressTimer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSprite.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsBody.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsShape.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCRenderTexture.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCImage.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCNodeGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleBatchNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleSystem.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCString.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCArray.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/ccCArray.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/base/CCDataVisitor.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleExamples.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParticleSystemQuad.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCGrabber.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCGrid.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCRenderer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCGLProgramCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/ccShaders.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCTextureCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsContact.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/physics/CCPhysicsJoint.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCDevice.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCFileUtils.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCSAXParser.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCThread.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/mac/CCApplication.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCApplicationProtocol.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/desktop/CCGLView.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/platform/CCGLViewProtocol.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/external/glfw3/include/mac/glfw3.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCAnimationCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCSpriteFrameCache.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTextFieldTTF.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCParallaxNode.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXObjectGroup.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXXMLParser.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTMXTiledMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCTileMapAtlas.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFastTMXTiledMap.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCFastTMXLayer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCComponent.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/2d/CCComponentContainer.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCSprite3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/renderer/CCMeshCommand.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCMesh.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCBundle3DData.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCMeshSkin.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimate3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimation3D.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimationCurve.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCAnimationCurve.inl
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/3d/CCSprite3DMaterial.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/audio/include/SimpleAudioEngine.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/audio/include/Export.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDictionary.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCSet.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCInteger.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCFloat.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDouble.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCBool.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCNotificationCenter.h
+d/Users/yup/Documents/workspace/macaron/cocos2d/cocos/deprecated/CCDeprecated.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp173"[1mCompileC[0m build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/main.o [1mmac/main.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler74eeeecf4693b941^97577ed14693b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp0000000000000000^3729"[1mCompileC[0m build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/main.o [1mmac/main.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DUSE_FILE32API -DCC_TARGET_OS_MAC -DCOCOS2D_DEBUG=1 -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/macaron\ Mac.hmap -I/Users/yup/Documents/workspace/macaron/bin/debug/mac/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/base -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/physics -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/math -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/ui -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/network -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/audio/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/editor-support -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/extensions -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/chipmunk/include/chipmunk -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/platform/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/glfw3/include/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources/x86_64 -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources -F/Users/yup/Documents/workspace/macaron/bin/debug/mac -include /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch -MMD -MT dependencies -MF /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/main.dia -c /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/main.cpp -o /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/main.o36"C7979A29-B28D-445C-998E-0D5B9980ED1E-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CCpResource /Users/yup/Documents/workspace/macaron/Resources/CloseNormal.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseNormal.png
+s429082319.905635
+e429082319.907023
+r1
+xCpResource
+x/Users/yup/Documents/workspace/macaron/Resources/CloseNormal.png
+x/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/CloseNormal.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Copy /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/CloseNormal.png196"[1mCpResource[0m /Users/yup/Documents/workspace/macaron/Resources/CloseNormal.png [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseNormal.png[0mb8e5e7cf4693b941^fd32e8cf4693b941^---0#0#1#-19%DVTDocumentLocation2@112"file:///Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron%20Mac.app/Contents/Resources/CloseNormal.png00345c8cddffdf42^522"[1mCpResource[0m /Users/yup/Documents/workspace/macaron/Resources/CloseNormal.png [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseNormal.png[0m    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/yup/Documents/workspace/macaron/Resources/CloseNormal.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources36"11EDFB89-FD99-4FCD-8774-6EC8E3B59258-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CCpResource /Users/yup/Documents/workspace/macaron/Resources/CloseSelected.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseSelected.png
+s429082319.905921
+e429082319.907286
+r1
+xCpResource
+x/Users/yup/Documents/workspace/macaron/Resources/CloseSelected.png
+x/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/CloseSelected.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/CloseSelected.png200"[1mCpResource[0m /Users/yup/Documents/workspace/macaron/Resources/CloseSelected.png [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseSelected.png[0me8f9e7cf4693b941^4a44e8cf4693b941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron%20Mac.app/Contents/Resources/CloseSelected.png00345c8cddffdf42^528"[1mCpResource[0m /Users/yup/Documents/workspace/macaron/Resources/CloseSelected.png [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/CloseSelected.png[0m    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/yup/Documents/workspace/macaron/Resources/CloseSelected.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources36"0CDC8FC2-DDBC-4D0E-906B-8CD3CC6FCF61-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CCpResource /Users/yup/Documents/workspace/macaron/Resources/HelloWorld.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/HelloWorld.png
+s429082319.906326
+e429082319.909081
+r1
+xCpResource
+x/Users/yup/Documents/workspace/macaron/Resources/HelloWorld.png
+x/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/HelloWorld.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Copy /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/HelloWorld.png194"[1mCpResource[0m /Users/yup/Documents/workspace/macaron/Resources/HelloWorld.png [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/HelloWorld.png[0m2c11e8cf4693b941^a1bbe8cf4693b941^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron%20Mac.app/Contents/Resources/HelloWorld.png00345c8cddffdf42^519"[1mCpResource[0m /Users/yup/Documents/workspace/macaron/Resources/HelloWorld.png [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/HelloWorld.png[0m    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/yup/Documents/workspace/macaron/Resources/HelloWorld.png /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources36"5FAEA577-AF3E-478E-9082-DD518E962E63-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CCpResource mac/Icon.icns /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/Icon.icns
+s429082319.905754
+e429082319.917114
+r1
+xCpResource
+xmac/Icon.icns
+x/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/Icon.icns
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Resources/Icon.icns139"[1mCpResource[0m mac/Icon.icns [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/Icon.icns[0m90f6e7cf4693b941^e2c9eacf4693b941^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron%20Mac.app/Contents/Resources/Icon.icns00345c8cddffdf42^466"[1mCpResource[0m mac/Icon.icns [1m/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources/Icon.icns[0m    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Icon.icns /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Resources36"C9C006DE-E275-400F-B558-AC921D242E29-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CLd /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/MacOS/macaron\ Mac normal x86_64
+s429082322.110573
+e429082322.857806
+r1
+xLd
+x/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/MacOS/macaron Mac
+xnormal
+xx86_64
+d/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/macaron Mac.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
+d/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/AppDelegate.o
+d/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/HelloWorldScene.o
+d/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron Mac.build/Objects-normal/x86_64/main.o
+d/Users/yup/Documents/workspace/macaron/bin/debug/mac/libbox2d Mac.a
+d/Users/yup/Documents/workspace/macaron/bin/debug/mac/libchipmunk Mac.a
+d/Users/yup/Documents/workspace/macaron/bin/debug/mac/libcocos2dx Mac.a
+d/Users/yup/Documents/workspace/macaron/bin/debug/mac/libcocos2dx-extensions Mac.a
+d/Users/yup/Documents/workspace/macaron/bin/debug/mac/libCocosDenshion Mac.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libcurl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AVFoundation.framework/Versions/A/Resources/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Link /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/MacOS/macaron Mac122"[1mLd[0m /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/MacOS/macaron\ Mac normal x86_640f611cd24693b941^f699dbd24693b941^---0#0#1#--1609"[1mLd[0m /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/MacOS/macaron\ Mac normal x86_64    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    export MACOSX_DEPLOYMENT_TARGET=10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/yup/Documents/workspace/macaron/bin/debug/mac -F/Users/yup/Documents/workspace/macaron/bin/debug/mac -filelist /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/macaron\ Mac.LinkFileList -mmacosx-version-min=10.7 -stdlib=libc++ /Users/yup/Documents/workspace/macaron/bin/debug/mac/libbox2d\ Mac.a /Users/yup/Documents/workspace/macaron/bin/debug/mac/libchipmunk\ Mac.a /Users/yup/Documents/workspace/macaron/bin/debug/mac/libcocos2dx\ Mac.a /Users/yup/Documents/workspace/macaron/bin/debug/mac/libcocos2dx-extensions\ Mac.a /Users/yup/Documents/workspace/macaron/bin/debug/mac/libCocosDenshion\ Mac.a -lcurl -lz -framework IOKit -framework OpenGL -framework AppKit -framework Foundation -framework CoreGraphics -framework QuartzCore -framework OpenAL -framework AVFoundation -framework AudioToolbox -Xlinker -dependency_info -Xlinker /Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/Objects-normal/x86_64/macaron\ Mac_dependency_info.dat -o /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/MacOS/macaron\ Mac36"4B6C4513-12D4-4B89-9F39-5FF3938EFAC3-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CProcessInfoPlistFile /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Info.plist /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Info.plist
+s429082319.903101
+e429082319.905033
+r1
+xProcessInfoPlistFile
+x/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app/Contents/Info.plist
+x/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Process /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Info.plist141"[1mProcessInfoPlistFile[0m /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Info.plist [1mmac/Info.plist[0mf145e7cf4693b941^6ec0e7cf4693b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Info.plist0000000000000000^527"[1mProcessInfoPlistFile[0m /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Info.plist [1mmac/Info.plist[0m    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    builtin-infoPlistUtility /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Info.plist -genpkginfo /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app/Contents/Info.plist36"71153CB2-9A1F-44C7-A649-480696746818-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CProcessPCH++ /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.pch mac/Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s429082319.917796
+e429082319.931995
+r1
+xProcessPCH++
+x/var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.pch
+xmac/Prefix.pch
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Precompile mac/Prefix.pch266"[1mProcessPCH++[0m /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.pch mac/Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera609ebcf4693b941^c097eecf4693b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Prefix.pch0000000000000000^3782"[1mProcessPCH++[0m /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.pch mac/Prefix.pch normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch x86_64 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DUSE_FILE32API -DCC_TARGET_OS_MAC -DCOCOS2D_DEBUG=1 -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/macaron\ Mac.hmap -I/Users/yup/Documents/workspace/macaron/bin/debug/mac/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/base -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/physics -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/math -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/2d -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/ui -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/network -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/audio/include -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/editor-support -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/extensions -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/chipmunk/include/chipmunk -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/cocos/platform/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/../cocos2d/external/glfw3/include/mac -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources/x86_64 -I/Users/yup/Documents/workspace/macaron/proj.ios_mac/build/macaron.build/Debug/macaron\ Mac.build/DerivedSources -F/Users/yup/Documents/workspace/macaron/bin/debug/mac --serialize-diagnostics /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.d -c /Users/yup/Documents/workspace/macaron/proj.ios_mac/mac/Prefix.pch -o /var/folders/40/h9kt629d7rg21ssnwhstbwg00000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Prefix-emtmykcerdtqiegvwsqzcqgohhfn/Prefix.pch.pch36"678E6F34-0BC7-45B8-9C04-B893DDFC02B8-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
+CTouch /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app
+s429082322.858943
+e429082322.951321
+r1
+xTouch
+x/Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Touch /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron Mac.app83"[1mTouch[0m /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app1ceedbd24693b941^d789f3d24693b941^---0#0#1#--235"[1mTouch[0m /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app    cd /Users/yup/Documents/workspace/macaron/proj.ios_mac    /usr/bin/touch -c /Users/yup/Documents/workspace/macaron/bin/debug/mac/macaron\ Mac.app36"97E2229A-DCC5-4795-A86D-40EF8E3100A5-
+bCDA7940C-109B-43CD-9E9D-98AD9E85F555
+
