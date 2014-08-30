@@ -1,13 +1,11 @@
-#include "MacaronLayer.h"
+#include "MacaronAnimLayer.h"
 #include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 using namespace cocos2d;
 
-
-
 	// on "init" you need to initialize your instance
-bool MacaronLayer::init()
+bool MacaronAnimLayer::init()
 	{
 		//////////////////////////////
 		// 1. super init first
@@ -22,18 +20,18 @@ bool MacaronLayer::init()
 
 		//change background music, macaron, light
 		auto listener = EventListenerTouchOneByOne::create();
-		listener->onTouchBegan = CC_CALLBACK_2(MacaronLayer::onTouchBegan, this);
-		listener->onTouchEnded = CC_CALLBACK_2(MacaronLayer::onTouchEnded, this);
+		listener->onTouchBegan = CC_CALLBACK_2(MacaronAnimLayer::onTouchBegan, this);
+		listener->onTouchEnded = CC_CALLBACK_2(MacaronAnimLayer::onTouchEnded, this);
 		Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
 
 		
-		MacaronLayer::basicMacaron();
+		MacaronAnimLayer::basicMacaron();
 
 
 		return true;
 	}
-void MacaronLayer::basicMacaron(){
-	MacaronLayer::removeAllChildren();
+void MacaronAnimLayer::basicMacaron(){
+	MacaronAnimLayer::removeAllChildren();
 	if (CocosDenshion::SimpleAudioEngine::sharedEngine()->isBackgroundMusicPlaying())
 		CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic(true);
 
@@ -53,12 +51,12 @@ void MacaronLayer::basicMacaron(){
 	auto animfor = CCRepeatForever::create(anim);
 	basicMa->runAction(animfor);
 
-	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/Akashic_Records_-_Gangsta_Hip_Hop_Loop.mp3");
+//	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/Akashic_Records_-_Gangsta_Hip_Hop_Loop.mp3");
 
 }
 
-void MacaronLayer::rainbowMacaron(){
-	MacaronLayer::removeAllChildren();
+void MacaronAnimLayer::rainbowMacaron(){
+	MacaronAnimLayer::removeAllChildren();
 	if (CocosDenshion::SimpleAudioEngine::sharedEngine()->isBackgroundMusicPlaying())
 		CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic(true);
 
@@ -82,7 +80,7 @@ void MacaronLayer::rainbowMacaron(){
 
 	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/Akashic_Records_-_Optimistic.mp3");
 }
-bool MacaronLayer::onTouchBegan(Touch *touch, Event *unused_event){
+bool MacaronAnimLayer::onTouchBegan(Touch *touch, Event *unused_event){
 	Point location = touch->getLocation();
 	touchst = location.x;
 	if (touchst > (visibleSize.width / 3 - basicMa->getContentSize().width / 2) && touchst < (visibleSize.width / 3 + basicMa->getContentSize().width / 2))
@@ -91,7 +89,7 @@ bool MacaronLayer::onTouchBegan(Touch *touch, Event *unused_event){
 		return false;
 }
 
-void MacaronLayer::onTouchEnded(Touch *touch, Event *unused_event){
+void MacaronAnimLayer::onTouchEnded(Touch *touch, Event *unused_event){
 	Point location = touch->getLocation();
 	touchen = location.x;
 	float t = touchst - touchen;
@@ -101,10 +99,10 @@ void MacaronLayer::onTouchEnded(Touch *touch, Event *unused_event){
 		switch (i){
 
 		case 0 : 
-			MacaronLayer::basicMacaron();
+			MacaronAnimLayer::basicMacaron();
 			break;
 		case 1 : 
-			MacaronLayer::rainbowMacaron();
+			MacaronAnimLayer::rainbowMacaron();
 			break;
 
 	}

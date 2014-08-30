@@ -1,10 +1,10 @@
-#ifndef _MACARON_LAYER_H_
-#define _MACARON_LAYER_H_
+#ifndef _GAME_SCENE_H_
+#define _GAME_SCENE_H_
 
 #include "cocos2d.h"
 USING_NS_CC;
 
-class MacaronLayer : public cocos2d::Layer
+class GameScene : public cocos2d::Layer
 {
 public:
     virtual bool init();
@@ -17,7 +17,7 @@ public:
     void createMenu();
     void createRapboard();
     void debugLine();
-    CREATE_FUNC(MacaronLayer)
+    CREATE_FUNC(GameScene)
 private:
     Size menuSize;
     Size animSize;

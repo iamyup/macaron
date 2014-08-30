@@ -1,10 +1,10 @@
-#ifndef __MACARON_LAYER_H__
-#define __MACARON_LAYER_H__
+#ifndef __MACARON_ANIM_LAYER_H__
+#define __MACARON_ANIM_LAYER_H__
 
 #include "cocos2d.h"
 using namespace cocos2d;
 
-class MacaronLayer : public cocos2d::Layer
+class MacaronAnimLayer : public cocos2d::Layer
 {
 public:
 	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
@@ -26,7 +26,7 @@ public:
 	void onTouchEnded(Touch *touch, Event *unused_event);
 	float touchst, touchen;
 	
-	CREATE_FUNC(MacaronLayer);
+	CREATE_FUNC(MacaronAnimLayer);
 };
 
 #endif // __HELLOWORLD_SCENE_H__
