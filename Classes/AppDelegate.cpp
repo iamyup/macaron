@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
-#include "LogoLayer.h"
-#include "MacaronLayer.h"
+#include "LogoScene.h"
+#include "GameScene.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -33,7 +33,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // create a scene. it's an autorelease object
 //    auto scene = LogoLayer::createScene();
-    auto scene = MacaronLayer::createScene();
+    auto scene = GameScene::createScene();
     
     // run
     director->runWithScene(scene);

@@ -1,7 +1,7 @@
-#include "LogoLayer.h"
+#include "LogoScene.h"
 USING_NS_CC;
 
-bool LogoLayer::init()
+bool LogoScene::init()
 {
     if (Layer::init() == false)
     {
@@ -38,10 +38,10 @@ bool LogoLayer::init()
     return true;
 }
 
-cocos2d::Scene* LogoLayer::createScene()
+cocos2d::Scene* LogoScene::createScene()
 {
     Scene* pScene = Scene::create();
-    LogoLayer* pLayer = LogoLayer::create();
+    LogoScene* pLayer = LogoScene::create();
 
     pScene->addChild(pLayer);
     

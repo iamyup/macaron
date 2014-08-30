@@ -1,15 +1,15 @@
-#ifndef _LOG_LAYER_H_
-#define _LOG_LAYER_H_
+#ifndef _LOG_SCENE_H_
+#define _LOG_SCENE_H_
 
 #include "cocos2d.h"
 
-class LogoLayer : public cocos2d::Layer
+class LogoScene : public cocos2d::Layer
 {
 public:
     virtual bool init();
     static cocos2d::Scene* createScene();
     
-    CREATE_FUNC(LogoLayer)
+    CREATE_FUNC(LogoScene)
 };
 
 #endif

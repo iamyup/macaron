@@ -1,6 +1,6 @@
-#include "MacaronLayer.h"
+#include "GameScene.h"
 
-bool MacaronLayer::init()
+bool GameScene::init()
 {
     if (Layer::init() == false)
     {
@@ -17,10 +17,10 @@ bool MacaronLayer::init()
     return true;
 }
 
-Scene* MacaronLayer::createScene()
+Scene* GameScene::createScene()
 {
     Scene* pScene = Scene::create();
-    MacaronLayer* pLayer = MacaronLayer::create();
+    GameScene* pLayer = GameScene::create();
 
     pScene->addChild(pLayer);
     
@@ -28,30 +28,31 @@ Scene* MacaronLayer::createScene()
 }
 
 
-void MacaronLayer::menuWhoCallback(Ref* pSender)
+void GameScene::menuWhoCallback(Ref* pSender)
 {
     
 }
 
-void MacaronLayer::menuWhatCallback(Ref* pSender)
+void GameScene::menuWhatCallback(Ref* pSender)
 {
     
 }
 
-void MacaronLayer::menuDoCallback(Ref* pSender)
+void GameScene::menuDoCallback(Ref* pSender)
 {
     
 }
+
 #define MENU_X 100.0f
 #define ANIM_OFFSET 50.0f
 #define RAP_OFFSET 50.0f
-void MacaronLayer::createMenu()
+void GameScene::createMenu()
 {
     Size winSize = Director::getInstance()->getWinSize();
     
-    MenuItem* menuWho = MenuItemImage::create("btn_who_nor.png", "btn_who_sel.png", CC_CALLBACK_1(MacaronLayer::menuWhoCallback, this));
-    MenuItem* menuWhat = MenuItemImage::create("btn_what_nor.png", "btn_what_sel.png", CC_CALLBACK_1(MacaronLayer::menuWhatCallback, this));
-    MenuItem* menuDo = MenuItemImage::create("btn_do_nor.png", "btn_do_sel.png", CC_CALLBACK_1(MacaronLayer::menuDoCallback, this));
+    MenuItem* menuWho = MenuItemImage::create("btn_who_nor.png", "btn_who_sel.png", CC_CALLBACK_1(GameScene::menuWhoCallback, this));
+    MenuItem* menuWhat = MenuItemImage::create("btn_what_nor.png", "btn_what_sel.png", CC_CALLBACK_1(GameScene::menuWhatCallback, this));
+    MenuItem* menuDo = MenuItemImage::create("btn_do_nor.png", "btn_do_sel.png", CC_CALLBACK_1(GameScene::menuDoCallback, this));
     
     menuSize = menuWho->getContentSize();
 
@@ -61,7 +62,7 @@ void MacaronLayer::createMenu()
     addChild(pMenu, 1);
 }
 
-void MacaronLayer::createMacaronAnim()
+void GameScene::createMacaronAnim()
 {
     Size winSize = Director::getInstance()->getWinSize();
     SpriteBatchNode* spritebatch = SpriteBatchNode::create("anim/macaron.png");
@@ -89,7 +90,7 @@ void MacaronLayer::createMacaronAnim()
     macaron->runAction(RepeatForever::create(Animate::create(anim)));
 }
 
-void MacaronLayer::createRapboard()
+void GameScene::createRapboard()
 {
     float bg_x = MENU_X+menuSize.width/2+ANIM_OFFSET+animSize.width+RAP_OFFSET;
     Size winSize = Director::getInstance()->getWinSize();
@@ -110,7 +111,7 @@ void MacaronLayer::createRapboard()
     }
 }
 
-void MacaronLayer::debugLine()
+void GameScene::debugLine()
 {
     Size winSize = Director::getInstance()->getWinSize();
     auto winRectNode = DrawNode::create();
