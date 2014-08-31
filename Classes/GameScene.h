@@ -9,9 +9,9 @@ class GameScene : public cocos2d::Layer
 public:
     virtual bool init();
     static Scene* createScene();
-    void menuWhoCallback(Ref* pSender);
-    void menuWhatCallback(Ref* pSender);
-    void menuDoCallback(Ref* pSender);
+    void menuMaCallback(Ref* pSender);
+    void menuKaCallback(Ref* pSender);
+    void menuRonCallback(Ref* pSender);
 
     void createMacaronAnim();
     void createMenu();

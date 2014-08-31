@@ -9,29 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Classes/LogoLayer.cpp"
-            timestampString = "430479867.424653"
+            filePath = "../Classes/LogoScene.cpp"
+            timestampString = "431131615.820843"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "LogoLayer::init()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/MacaronLayer.cpp"
-            timestampString = "431057974.054802"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "MacaronLayer::createRapboard()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "LogoScene::init()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

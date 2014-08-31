@@ -9,6 +9,7 @@ public:
     virtual bool init();
     static cocos2d::Scene* createScene();
     
+    void replaceScene(float dt);
     CREATE_FUNC(LogoScene)
 };
 

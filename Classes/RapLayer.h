@@ -1,28 +1,28 @@
-#ifndef __WWD_LAYER_H__
-#define __WWD_LAYER_H__
+#ifndef __RAP_LAYER_H__
+#define __RAP_LAYER_H__
 
 #include "cocos2d.h"
 using namespace cocos2d;
 
-class WWDLayer : public cocos2d::Layer
+class RapLayer : public LayerColor
 {
 public:
 	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
 	virtual bool init();
 
 	// implement the "static create()" method manually
-	cocos2d::Size visibleSize;
-	cocos2d::Vec2 origin;
+	Size visibleSize;
+	Vec2 origin;
 
-	int i;
-	void WordWho();
-	void WordWhat();
-	void WordDo();
+    void initBG();
+	void wordMa();
+	void wordKa();
+	void wordRon();
 	void whoEffect(Ref *sender);
-
-
 	
-	CREATE_FUNC(WWDLayer);
+	CREATE_FUNC(RapLayer);
+private:
+    int i;
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif
