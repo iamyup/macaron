@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "MacaronAnimLayer.h"
 
 bool GameScene::init()
 {
@@ -27,36 +28,35 @@ Scene* GameScene::createScene()
     return pScene;
 }
 
-
-void GameScene::menuWhoCallback(Ref* pSender)
+void GameScene::menuMaCallback(Ref* pSender)
 {
     
 }
 
-void GameScene::menuWhatCallback(Ref* pSender)
+void GameScene::menuKaCallback(Ref* pSender)
 {
     
 }
 
-void GameScene::menuDoCallback(Ref* pSender)
+void GameScene::menuRonCallback(Ref* pSender)
 {
     
 }
 
 #define MENU_X 100.0f
-#define ANIM_OFFSET 50.0f
-#define RAP_OFFSET 50.0f
+#define ANIM_X 220.5f
+#define RAP_X 564.5f
 void GameScene::createMenu()
 {
     Size winSize = Director::getInstance()->getWinSize();
     
-    MenuItem* menuWho = MenuItemImage::create("btn_who_nor.png", "btn_who_sel.png", CC_CALLBACK_1(GameScene::menuWhoCallback, this));
-    MenuItem* menuWhat = MenuItemImage::create("btn_what_nor.png", "btn_what_sel.png", CC_CALLBACK_1(GameScene::menuWhatCallback, this));
-    MenuItem* menuDo = MenuItemImage::create("btn_do_nor.png", "btn_do_sel.png", CC_CALLBACK_1(GameScene::menuDoCallback, this));
+    MenuItem* menuMa = MenuItemImage::create("btn_who_nor.png", "btn_who_sel.png", CC_CALLBACK_1(GameScene::menuMaCallback, this));
+    MenuItem* menuKa = MenuItemImage::create("btn_what_nor.png", "btn_what_sel.png", CC_CALLBACK_1(GameScene::menuKaCallback, this));
+    MenuItem* menuRon = MenuItemImage::create("btn_do_nor.png", "btn_do_sel.png", CC_CALLBACK_1(GameScene::menuRonCallback, this));
     
-    menuSize = menuWho->getContentSize();
+    menuSize = menuMa->getContentSize();
 
-    Menu* pMenu = Menu::create(menuWho, menuWhat, menuDo, NULL);
+    Menu* pMenu = Menu::create(menuMa, menuKa, menuRon, NULL);
     pMenu->alignItemsVerticallyWithPadding(100.0f);
     pMenu->setPosition(Point(MENU_X, winSize.height/2));
     addChild(pMenu, 1);
@@ -64,41 +64,17 @@ void GameScene::createMenu()
 
 void GameScene::createMacaronAnim()
 {
-    Size winSize = Director::getInstance()->getWinSize();
-    SpriteBatchNode* spritebatch = SpriteBatchNode::create("anim/macaron.png");
-    
-    SpriteFrameCache* cache = SpriteFrameCache::getInstance();
-    cache->addSpriteFramesWithFile("anim/macaron.plist");
-    
-    Sprite* macaron = Sprite::createWithSpriteFrameName("macaron1-1.png");
-    macaron->setScale(0.5f, 0.5f);
-    animSize = macaron->getBoundingBox().size;
-    macaron->setAnchorPoint(Point(0.0f, 0.5f));
-    macaron->setPosition(MENU_X+menuSize.width/2+ANIM_OFFSET, winSize.height/2);
-    spritebatch->addChild(macaron);
-    addChild(spritebatch);
-    
-    
-    Vector<SpriteFrame*> animFrames(3);
-    for (int i = 1; i <= 3; i++)
-    {
-        SpriteFrame* frame = cache->getSpriteFrameByName(StringUtils::format("macaron1-%d.png", i));
-        animFrames.pushBack(frame);
-    }
-    
-    Animation* anim = Animation::createWithSpriteFrames(animFrames, 0.2f);
-    macaron->runAction(RepeatForever::create(Animate::create(anim)));
+    auto anim = MacaronAnimLayer::create();
+    anim->createMacaron(MacaronAnimLayer::GREEN_MACARON);
+    printf("%f x %f\n", anim->getBoundingBox().size.width, anim->getBoundingBox().size.height);
+    anim->setPosition(ANIM_X, 0.0f);
+    animSize = anim->getBoundingBox().size;
+    printf("%f x %f", animSize.width, animSize.height);
+    addChild(anim);
 }
 
 void GameScene::createRapboard()
 {
-    float bg_x = MENU_X+menuSize.width/2+ANIM_OFFSET+animSize.width+RAP_OFFSET;
-    Size winSize = Director::getInstance()->getWinSize();
-    Sprite* img = Sprite::create("img_speack_bubble.png");
-    img->setAnchorPoint(Point(0.0f, 0.5f));
-    img->setPosition(bg_x, winSize.height/2);
-    addChild(img);
-
     Vector<Sprite*> btns;
     for(int i = 0; i < 4; i ++)
     {
@@ -146,11 +122,4 @@ void GameScene::debugLine()
     };
     menuRectNode->drawPolygon(menuRect, 4, Color4F(0,0,0,0), 3, Color4F(0.2f,0.2f,0.2f,1));
     addChild(menuRectNode);
-
-//
-//    auto menuNode = DrawNode::create();
-//    Vec2 menuRect[] =
-//    {
-//        Vec2(0,
-//    }
 }

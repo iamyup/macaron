@@ -4,9 +4,12 @@
 #include "cocos2d.h"
 using namespace cocos2d;
 
-class MacaronAnimLayer : public cocos2d::Layer
+class MacaronAnimLayer : public cocos2d::LayerColor
 {
 public:
+    static const int GREEN_MACARON = 1;
+    static const int RAINBOW_MACARON = 2;
+
 	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
 	virtual bool init();
 
@@ -14,19 +17,18 @@ public:
 	cocos2d::Size visibleSize;
 	cocos2d::Vec2 origin;
 
-	void basicMacaron();
+    void createMacaron(int macaronIndex);
 
-	cocos2d::Sprite* basicMa;
-	
-	void rainbowMacaron();
-	cocos2d::Sprite* rainbow;
-	
 	//change
 	bool onTouchBegan(Touch *touch, Event *unused_event);
 	void onTouchEnded(Touch *touch, Event *unused_event);
 	float touchst, touchen;
 	
 	CREATE_FUNC(MacaronAnimLayer);
+    
+private:
+    SpriteBatchNode* m_spritebatch;
+    SpriteFrameCache* m_cache;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

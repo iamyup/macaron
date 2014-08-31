@@ -1,4 +1,5 @@
 #include "LogoScene.h"
+#include "GameScene.h"
 USING_NS_CC;
 
 bool LogoScene::init()
@@ -35,10 +36,12 @@ bool LogoScene::init()
     
     Animation* anim = Animation::createWithSpriteFrames(animFrames, 0.2f);
     macaron->runAction(RepeatForever::create(Animate::create(anim)));
+    
+    schedule(schedule_selector(LogoScene::replaceScene), 1.0f);
     return true;
 }
 
-cocos2d::Scene* LogoScene::createScene()
+Scene* LogoScene::createScene()
 {
     Scene* pScene = Scene::create();
     LogoScene* pLayer = LogoScene::create();
@@ -46,4 +49,11 @@ cocos2d::Scene* LogoScene::createScene()
     pScene->addChild(pLayer);
     
     return pScene;
+}
+
+void LogoScene::replaceScene(float dt)
+{
+    auto newScene = GameScene::createScene();
+    auto transition = TransitionFade::create(1.0f, newScene);
+    Director::getInstance()->replaceScene(transition);
 }

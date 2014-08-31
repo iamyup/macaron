@@ -56,8 +56,8 @@
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		A61B154319A89A9600EF3A9C /* anim in Resources */ = {isa = PBXBuildFile; fileRef = A61B154219A89A9600EF3A9C /* anim */; };
 		A61B154419A89A9600EF3A9C /* anim in Resources */ = {isa = PBXBuildFile; fileRef = A61B154219A89A9600EF3A9C /* anim */; };
-		A61B154D19A89C9A00EF3A9C /* MacaronLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61B154C19A89C9A00EF3A9C /* MacaronLayer.cpp */; };
-		A61B154E19A89C9A00EF3A9C /* MacaronLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61B154C19A89C9A00EF3A9C /* MacaronLayer.cpp */; };
+		A61B154D19A89C9A00EF3A9C /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61B154C19A89C9A00EF3A9C /* GameScene.cpp */; };
+		A61B154E19A89C9A00EF3A9C /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61B154C19A89C9A00EF3A9C /* GameScene.cpp */; };
 		A61B156419A8B64200EF3A9C /* btn_do_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = A61B155019A8B64200EF3A9C /* btn_do_nor.png */; };
 		A61B156519A8B64200EF3A9C /* btn_do_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = A61B155019A8B64200EF3A9C /* btn_do_nor.png */; };
 		A61B156619A8B64200EF3A9C /* btn_do_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = A61B155119A8B64200EF3A9C /* btn_do_sel.png */; };
@@ -98,12 +98,18 @@
 		A61B158919A8B64200EF3A9C /* img_light1_01.png in Resources */ = {isa = PBXBuildFile; fileRef = A61B156219A8B64200EF3A9C /* img_light1_01.png */; };
 		A61B158A19A8B64200EF3A9C /* img_light1_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A61B156319A8B64200EF3A9C /* img_light1_02.png */; };
 		A61B158B19A8B64200EF3A9C /* img_light1_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A61B156319A8B64200EF3A9C /* img_light1_02.png */; };
-		A64A785C1994A673009C490D /* LogoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A64A785A1994A673009C490D /* LogoLayer.cpp */; };
-		A64A785D1994A673009C490D /* LogoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A64A785A1994A673009C490D /* LogoLayer.cpp */; };
+		A64A785C1994A673009C490D /* LogoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A64A785A1994A673009C490D /* LogoScene.cpp */; };
+		A64A785D1994A673009C490D /* LogoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A64A785A1994A673009C490D /* LogoScene.cpp */; };
 		A67A7B3E19AA249700DA00AC /* img_speack_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = A67A7B3D19AA249700DA00AC /* img_speack_bubble.png */; };
 		A67A7B3F19AA249700DA00AC /* img_speack_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = A67A7B3D19AA249700DA00AC /* img_speack_bubble.png */; };
 		A6A7A15E19A24AAB005E2205 /* img_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A7A15D19A24AAB005E2205 /* img_logo.png */; };
 		A6A7A15F19A24AAB005E2205 /* img_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A7A15D19A24AAB005E2205 /* img_logo.png */; };
+		A6D6E5A119B1AD5400FA4B07 /* AfterGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D6E59B19B1AD5400FA4B07 /* AfterGameLayer.cpp */; };
+		A6D6E5A219B1AD5400FA4B07 /* AfterGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D6E59B19B1AD5400FA4B07 /* AfterGameLayer.cpp */; };
+		A6D6E5A319B1AD5400FA4B07 /* MacaronAnimLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D6E59D19B1AD5400FA4B07 /* MacaronAnimLayer.cpp */; };
+		A6D6E5A419B1AD5400FA4B07 /* MacaronAnimLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D6E59D19B1AD5400FA4B07 /* MacaronAnimLayer.cpp */; };
+		A6D6E5A519B1AD5400FA4B07 /* RapLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D6E59F19B1AD5400FA4B07 /* RapLayer.cpp */; };
+		A6D6E5A619B1AD5400FA4B07 /* RapLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D6E59F19B1AD5400FA4B07 /* RapLayer.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -298,8 +304,8 @@
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		A61B154219A89A9600EF3A9C /* anim */ = {isa = PBXFileReference; lastKnownFileType = folder; path = anim; sourceTree = "<group>"; };
-		A61B154C19A89C9A00EF3A9C /* MacaronLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MacaronLayer.cpp; path = ../Classes/MacaronLayer.cpp; sourceTree = "<group>"; };
-		A61B154F19A89CAD00EF3A9C /* MacaronLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacaronLayer.h; path = ../Classes/MacaronLayer.h; sourceTree = "<group>"; };
+		A61B154C19A89C9A00EF3A9C /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/GameScene.cpp; sourceTree = "<group>"; };
+		A61B154F19A89CAD00EF3A9C /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/GameScene.h; sourceTree = "<group>"; };
 		A61B155019A8B64200EF3A9C /* btn_do_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_do_nor.png; sourceTree = "<group>"; };
 		A61B155119A8B64200EF3A9C /* btn_do_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_do_sel.png; sourceTree = "<group>"; };
 		A61B155219A8B64200EF3A9C /* btn_what_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_what_nor.png; sourceTree = "<group>"; };
@@ -320,10 +326,16 @@
 		A61B156119A8B64200EF3A9C /* btn_who_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_who_sel.png; sourceTree = "<group>"; };
 		A61B156219A8B64200EF3A9C /* img_light1_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_light1_01.png; sourceTree = "<group>"; };
 		A61B156319A8B64200EF3A9C /* img_light1_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_light1_02.png; sourceTree = "<group>"; };
-		A64A785A1994A673009C490D /* LogoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LogoLayer.cpp; path = ../Classes/LogoLayer.cpp; sourceTree = "<group>"; };
-		A64A785B1994A673009C490D /* LogoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogoLayer.h; path = ../Classes/LogoLayer.h; sourceTree = "<group>"; };
+		A64A785A1994A673009C490D /* LogoScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LogoScene.cpp; path = ../Classes/LogoScene.cpp; sourceTree = "<group>"; };
+		A64A785B1994A673009C490D /* LogoScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogoScene.h; path = ../Classes/LogoScene.h; sourceTree = "<group>"; };
 		A67A7B3D19AA249700DA00AC /* img_speack_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_speack_bubble.png; sourceTree = "<group>"; };
 		A6A7A15D19A24AAB005E2205 /* img_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_logo.png; sourceTree = "<group>"; };
+		A6D6E59B19B1AD5400FA4B07 /* AfterGameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AfterGameLayer.cpp; path = ../Classes/AfterGameLayer.cpp; sourceTree = "<group>"; };
+		A6D6E59C19B1AD5400FA4B07 /* AfterGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AfterGameLayer.h; path = ../Classes/AfterGameLayer.h; sourceTree = "<group>"; };
+		A6D6E59D19B1AD5400FA4B07 /* MacaronAnimLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MacaronAnimLayer.cpp; path = ../Classes/MacaronAnimLayer.cpp; sourceTree = "<group>"; };
+		A6D6E59E19B1AD5400FA4B07 /* MacaronAnimLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacaronAnimLayer.h; path = ../Classes/MacaronAnimLayer.h; sourceTree = "<group>"; };
+		A6D6E59F19B1AD5400FA4B07 /* RapLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RapLayer.cpp; path = ../Classes/RapLayer.cpp; sourceTree = "<group>"; };
+		A6D6E5A019B1AD5400FA4B07 /* RapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RapLayer.h; path = ../Classes/RapLayer.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -400,10 +412,16 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A64A785A1994A673009C490D /* LogoLayer.cpp */,
-				A64A785B1994A673009C490D /* LogoLayer.h */,
-				A61B154C19A89C9A00EF3A9C /* MacaronLayer.cpp */,
-				A61B154F19A89CAD00EF3A9C /* MacaronLayer.h */,
+				A6D6E59B19B1AD5400FA4B07 /* AfterGameLayer.cpp */,
+				A6D6E59C19B1AD5400FA4B07 /* AfterGameLayer.h */,
+				A6D6E59D19B1AD5400FA4B07 /* MacaronAnimLayer.cpp */,
+				A6D6E59E19B1AD5400FA4B07 /* MacaronAnimLayer.h */,
+				A6D6E59F19B1AD5400FA4B07 /* RapLayer.cpp */,
+				A6D6E5A019B1AD5400FA4B07 /* RapLayer.h */,
+				A64A785A1994A673009C490D /* LogoScene.cpp */,
+				A64A785B1994A673009C490D /* LogoScene.h */,
+				A61B154C19A89C9A00EF3A9C /* GameScene.cpp */,
+				A61B154F19A89CAD00EF3A9C /* GameScene.h */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 			);
@@ -793,12 +811,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D6E5A319B1AD5400FA4B07 /* MacaronAnimLayer.cpp in Sources */,
+				A6D6E5A519B1AD5400FA4B07 /* RapLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
-				A64A785C1994A673009C490D /* LogoLayer.cpp in Sources */,
-				A61B154D19A89C9A00EF3A9C /* MacaronLayer.cpp in Sources */,
+				A6D6E5A119B1AD5400FA4B07 /* AfterGameLayer.cpp in Sources */,
+				A64A785C1994A673009C490D /* LogoScene.cpp in Sources */,
+				A61B154D19A89C9A00EF3A9C /* GameScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,9 +828,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
-				A64A785D1994A673009C490D /* LogoLayer.cpp in Sources */,
-				A61B154E19A89C9A00EF3A9C /* MacaronLayer.cpp in Sources */,
+				A64A785D1994A673009C490D /* LogoScene.cpp in Sources */,
+				A6D6E5A419B1AD5400FA4B07 /* MacaronAnimLayer.cpp in Sources */,
+				A61B154E19A89C9A00EF3A9C /* GameScene.cpp in Sources */,
+				A6D6E5A219B1AD5400FA4B07 /* AfterGameLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				A6D6E5A619B1AD5400FA4B07 /* RapLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
