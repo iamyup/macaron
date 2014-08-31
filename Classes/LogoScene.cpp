@@ -17,10 +17,10 @@ bool LogoScene::init()
     pBackgroundSprite->setPosition(winSize.width/2, winSize.height/2+200);
     addChild(pBackgroundSprite);
     
-    SpriteBatchNode* spritebatch = SpriteBatchNode::create("anim/macaron.png");
+    SpriteBatchNode* spritebatch = SpriteBatchNode::create("character_anim/macaron.png");
     
     SpriteFrameCache* cache = SpriteFrameCache::getInstance();
-    cache->addSpriteFramesWithFile("anim/macaron.plist");
+    cache->addSpriteFramesWithFile("character_anim/macaron.plist");
 
     Sprite* macaron = Sprite::createWithSpriteFrameName("macaron1-1.png");
     macaron->setAnchorPoint(Point(0.0f, 0.0f));

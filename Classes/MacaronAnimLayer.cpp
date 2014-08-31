@@ -9,7 +9,7 @@ bool MacaronAnimLayer::init()
 {
     //////////////////////////////
     // 1. super init first
-    if (!LayerColor::initWithColor(Color4B(255, 0, 0, 255))) // for debug
+    if (!LayerColor::initWithColor(Color4B(255, 255, 255, 255))) // for debug
     {
         return false;
     }
@@ -20,9 +20,9 @@ bool MacaronAnimLayer::init()
     listener->onTouchEnded = CC_CALLBACK_2(MacaronAnimLayer::onTouchEnded, this);
     Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
 
-    m_spritebatch = SpriteBatchNode::create("anim/macaron.png");
+    m_spritebatch = SpriteBatchNode::create("character_anim/macaron.png");
     m_cache = SpriteFrameCache::getInstance();
-    m_cache->addSpriteFramesWithFile("anim/macaron.plist");
+    m_cache->addSpriteFramesWithFile("character_anim/macaron.plist");
     addChild(m_spritebatch);
     return true;
 }

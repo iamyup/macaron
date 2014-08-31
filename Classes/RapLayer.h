@@ -18,6 +18,8 @@ public:
 	void wordMa();
 	void wordKa();
 	void wordRon();
+    void wordMaCallback(Ref* pSender);
+
 	void whoEffect(Ref *sender);
 	
 	CREATE_FUNC(RapLayer);

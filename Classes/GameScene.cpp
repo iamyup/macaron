@@ -1,5 +1,6 @@
 #include "GameScene.h"
 #include "MacaronAnimLayer.h"
+#include "RapLayer.h"
 
 bool GameScene::init()
 {
@@ -50,9 +51,9 @@ void GameScene::createMenu()
 {
     Size winSize = Director::getInstance()->getWinSize();
     
-    MenuItem* menuMa = MenuItemImage::create("btn_who_nor.png", "btn_who_sel.png", CC_CALLBACK_1(GameScene::menuMaCallback, this));
-    MenuItem* menuKa = MenuItemImage::create("btn_what_nor.png", "btn_what_sel.png", CC_CALLBACK_1(GameScene::menuKaCallback, this));
-    MenuItem* menuRon = MenuItemImage::create("btn_do_nor.png", "btn_do_sel.png", CC_CALLBACK_1(GameScene::menuRonCallback, this));
+    MenuItem* menuMa = MenuItemImage::create("btn_ma_nor.png", "btn_ma_pre.png", CC_CALLBACK_1(GameScene::menuMaCallback, this));
+    MenuItem* menuKa = MenuItemImage::create("btn_ca_nor.png", "btn_ca_pre.png", CC_CALLBACK_1(GameScene::menuKaCallback, this));
+    MenuItem* menuRon = MenuItemImage::create("btn_ron_nor.png", "btn_ron_pre.png", CC_CALLBACK_1(GameScene::menuRonCallback, this));
     
     menuSize = menuMa->getContentSize();
 
@@ -66,25 +67,16 @@ void GameScene::createMacaronAnim()
 {
     auto anim = MacaronAnimLayer::create();
     anim->createMacaron(MacaronAnimLayer::GREEN_MACARON);
-    printf("%f x %f\n", anim->getBoundingBox().size.width, anim->getBoundingBox().size.height);
     anim->setPosition(ANIM_X, 0.0f);
     animSize = anim->getBoundingBox().size;
-    printf("%f x %f", animSize.width, animSize.height);
     addChild(anim);
 }
 
 void GameScene::createRapboard()
 {
-    Vector<Sprite*> btns;
-    for(int i = 0; i < 4; i ++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
-            Sprite* img = Sprite::create(StringUtils::format("btn_who_%02d", i*3+j));
-//            img->setPosition(winSize.width/2, winSize.height/2+20
-//            addChild(img);
-        }
-    }
+    auto rap = RapLayer::create();
+    rap->setPosition(RAP_X, 0.0f);
+    addChild(rap);
 }
 
 void GameScene::debugLine()
