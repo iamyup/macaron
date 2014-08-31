@@ -1,10 +1,11 @@
 #include "RapLayer.h"
 #include "SimpleAudioEngine.h"
+USING_NS_CC;
 
-//USING_NS_CC;
-//using namespace cocos2d;
-
-using namespace cocos2d;
+#define WORD_X 76
+#define WORD_Y 120
+#define WORD_WIDTH 150
+#define WORD_HEIGHT 120
 
 
 // on "init" you need to initialize your instance
@@ -36,7 +37,6 @@ void RapLayer::initBG()
 
 void RapLayer::wordMa()
 {
-    Size size = Director::getInstance()->getVisibleSize();
     Vector<Sprite*> btns;
     for(int i = 0; i < 4; i ++)
     {
@@ -45,7 +45,7 @@ void RapLayer::wordMa()
             MenuItem* word = MenuItemImage::create(StringUtils::format("speach/word_ma%02d_nor.png", i*3+(j+1)), StringUtils::format("speach/word_ma%02d_pre.png", i*3+(j+1)), CC_CALLBACK_1(RapLayer::wordMaCallback, this));
             //            img->setPosition(winSize.width/2, winSize.height/2+20
             word->setAnchorPoint(Point(0.0f, 0.0f));
-            word->setPosition(76 + 150 * j, 120 + 120 * i);
+            word->setPosition(WORD_X + WORD_WIDTH * j, WORD_Y + WORD_HEIGHT * i);
             addChild(word);
         }
     }
