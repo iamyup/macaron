@@ -14,8 +14,9 @@ bool GameScene::init()
     createMenu();
     createMacaronAnim();
     createRapboard();
+    createYo();
 
-    debugLine();
+//    debugLine();
     return true;
 }
 
@@ -47,6 +48,8 @@ void GameScene::menuRonCallback(Ref* pSender)
 #define MENU_X 100.0f
 #define ANIM_X 220.5f
 #define RAP_X 564.5f
+#define YO_X 1120.0f
+#define YO_Y 580.0f
 void GameScene::createMenu()
 {
     Size winSize = Director::getInstance()->getWinSize();
@@ -77,6 +80,20 @@ void GameScene::createRapboard()
     auto rap = RapLayer::create();
     rap->setPosition(RAP_X, 0.0f);
     addChild(rap);
+}
+
+void GameScene::createYo()
+{
+    for (int i = 0; i < 2; i++)
+    {
+        for(int j = 0; j < 2; j++)
+        {
+            auto sprite = Sprite::create(StringUtils::format("img_yo_%d.png", (i*2)+j));
+            sprite->setAnchorPoint(Point(0.0f, 0.0f));
+            sprite->setPosition((YO_X*j), (YO_Y*i));
+            addChild(sprite);
+        }
+    }
 }
 
 void GameScene::debugLine()

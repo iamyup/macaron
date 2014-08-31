@@ -16,6 +16,7 @@ public:
     void createMacaronAnim();
     void createMenu();
     void createRapboard();
+    void createYo();
     void debugLine();
     CREATE_FUNC(GameScene)
 private:
