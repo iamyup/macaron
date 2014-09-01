@@ -16,10 +16,12 @@ public:
 
     void initBG();
 	void wordMa();
-	void wordKa();
+	void wordCa();
 	void wordRon();
     void wordMaCallback(Ref* pSender);
-
+    void wordCaCallback(Ref* pSender);
+    void wordRonCallback(Ref* pSender);
+    
 	void whoEffect(Ref *sender);
 	
 	CREATE_FUNC(RapLayer);

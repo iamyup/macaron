@@ -37,7 +37,6 @@ void RapLayer::initBG()
 
 void RapLayer::wordMa()
 {
-    Vector<Sprite*> btns;
     for(int i = 0; i < 4; i ++)
     {
         for(int j = 0; j < 3; j++)
@@ -51,18 +50,47 @@ void RapLayer::wordMa()
     }
 }
 
-void RapLayer::wordKa()
+void RapLayer::wordCa()
 {
-
-
+    for(int i = 0; i < 4; i ++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            MenuItem* word = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i*3+(j+1)), StringUtils::format("speach/word_ca%02d_pre.png", i*3+(j+1)), CC_CALLBACK_1(RapLayer::wordCaCallback, this));
+            //            img->setPosition(winSize.width/2, winSize.height/2+20
+            word->setAnchorPoint(Point(0.0f, 0.0f));
+            word->setPosition(WORD_X + WORD_WIDTH * j, WORD_Y + WORD_HEIGHT * i);
+            addChild(word);
+        }
+    }
 }
 
 void RapLayer::wordRon()
 {
-
+    for(int i = 0; i < 4; i ++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            MenuItem* word = MenuItemImage::create(StringUtils::format("speach/word_ron%02d_nor.png", i*3+(j+1)), StringUtils::format("speach/word_ron%02d_pre.png", i*3+(j+1)), CC_CALLBACK_1(RapLayer::wordRonCallback, this));
+            //            img->setPosition(winSize.width/2, winSize.height/2+20
+            word->setAnchorPoint(Point(0.0f, 0.0f));
+            word->setPosition(WORD_X + WORD_WIDTH * j, WORD_Y + WORD_HEIGHT * i);
+            addChild(word);
+        }
+    }
 }
 
 void RapLayer::wordMaCallback(cocos2d::Ref *pSender)
+{
+    CCLOG("=====================wordMaCallback======================");
+}
+
+void RapLayer::wordCaCallback(cocos2d::Ref *pSender)
+{
+    CCLOG("=====================wordMaCallback======================");
+}
+
+void RapLayer::wordRonCallback(cocos2d::Ref *pSender)
 {
     CCLOG("=====================wordMaCallback======================");
 }
