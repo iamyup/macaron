@@ -22,8 +22,8 @@ public:
 	//change
 	bool onTouchBegan(Touch *touch, Event *unused_event);
 	void onTouchEnded(Touch *touch, Event *unused_event);
-	float touchst, touchen;
-	
+	bool touchmacaron;
+
 	CREATE_FUNC(MacaronAnimLayer);
     
 private:

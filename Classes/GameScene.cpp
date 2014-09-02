@@ -132,3 +132,17 @@ void GameScene::debugLine()
     menuRectNode->drawPolygon(menuRect, 4, Color4F(0,0,0,0), 3, Color4F(0.2f,0.2f,0.2f,1));
     addChild(menuRectNode);
 }
+
+
+void GameScene::onKeyReleased(cocos2d::EventKeyboard::KeyCode keycode, cocos2d::Event *event)
+{
+	if (keycode == EventKeyboard::KeyCode::KEY_BACK) {
+
+		if (GameScene::checkonemore)
+			Director::getInstance()->end();
+		else
+			GameScene::checkonemore = true;
+	}
+	else
+		GameScene::checkonemore = false;
+}

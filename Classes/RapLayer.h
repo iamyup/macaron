@@ -20,8 +20,10 @@ public:
 	void wordRon();
     void wordMaCallback(Ref* pSender);
 
-	void whoEffect(Ref *sender);
-	
+	void MaEffect(Ref *sender);
+	void CaEffect(Ref *sender);
+	void RonEffect(Ref *sender);
+
 	CREATE_FUNC(RapLayer);
 private:
     int i;

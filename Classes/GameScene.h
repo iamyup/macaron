@@ -18,7 +18,12 @@ public:
     void createRapboard();
     void createYo();
     void debugLine();
-    CREATE_FUNC(GameScene)
+	CREATE_FUNC(GameScene);
+
+	//back key
+	void onKeyReleased(cocos2d::EventKeyboard::KeyCode keycode, cocos2d::Event *event);
+	bool checkonemore = false;
+
 private:
     Size menuSize;
     Size animSize;

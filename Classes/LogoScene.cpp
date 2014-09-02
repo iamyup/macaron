@@ -36,7 +36,13 @@ bool LogoScene::init()
     
     Animation* anim = Animation::createWithSpriteFrames(animFrames, 0.2f);
     macaron->runAction(RepeatForever::create(Animate::create(anim)));
-    
+	
+	//background
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("Sounds/backgroundmusic_1.mp3");
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("Sounds/backgroundmusic_2.mp3");
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("Sounds/backgroundmusic_3.mp3");
+
+
     schedule(schedule_selector(LogoScene::replaceScene), 1.0f);
     return true;
 }

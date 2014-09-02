@@ -16,7 +16,8 @@ bool MacaronAnimLayer::init()
 
     //change background music, macaron, light
     auto listener = EventListenerTouchOneByOne::create();
-    listener->onTouchBegan = CC_CALLBACK_2(MacaronAnimLayer::onTouchBegan, this);
+	listener->setSwallowTouches(true);
+	listener->onTouchBegan = CC_CALLBACK_2(MacaronAnimLayer::onTouchBegan, this);
     listener->onTouchEnded = CC_CALLBACK_2(MacaronAnimLayer::onTouchEnded, this);
     Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
 
@@ -32,7 +33,7 @@ void MacaronAnimLayer::createMacaron(int macaronIndex)
     m_spritebatch->removeAllChildren();
  
     Size size = Director::getInstance()->getVisibleSize();
-    Sprite* macaron = Sprite::createWithSpriteFrameName(StringUtils::format("macaron%d-1.png", macaronIndex));
+    Sprite* macaron = Sprite::createWithSpriteFrameName(StringUtils::format("macaron%d_1.png", macaronIndex));
     macaron->setScale(0.5f, 0.5f);
     macaron->setAnchorPoint(Point(0.0f, 0.5f));
     macaron->setPosition(0.0f, size.height/2);
@@ -41,12 +42,20 @@ void MacaronAnimLayer::createMacaron(int macaronIndex)
     Vector<SpriteFrame*> animFrames(3);
     for (int i = 1; i <= 3; i++)
     {
-        SpriteFrame* frame = m_cache->getSpriteFrameByName(StringUtils::format("macaron%d-%d.png", macaronIndex, i));
+        SpriteFrame* frame = m_cache->getSpriteFrameByName(StringUtils::format("macaron%d_%d.png", macaronIndex, i));
         animFrames.pushBack(frame);
     }
-    
+	if (macaronIndex == 3)
+	{
+		SpriteFrame* frame = m_cache->getSpriteFrameByName(StringUtils::format("macaron%d_4.png", macaronIndex));
+		animFrames.pushBack(frame);
+	}
+
     Animation* anim = Animation::createWithSpriteFrames(animFrames, 0.2f);
     macaron->runAction(RepeatForever::create(Animate::create(anim)));
+	
+	//music
+	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(StringUtils::format("Sounds/backgroundmusic_%d.mp3", macaronIndex).c_str());
 }
 
 bool MacaronAnimLayer::onTouchBegan(Touch *touch, Event *unused_event)
@@ -58,6 +67,6 @@ bool MacaronAnimLayer::onTouchBegan(Touch *touch, Event *unused_event)
 void MacaronAnimLayer::onTouchEnded(Touch *touch, Event *unused_event)
 {
 	Point location = touch->getLocation();
-	int index = rand()%2 + 1;
+	int index = rand()%3 + 1;
     createMacaron(index);
 }
