@@ -31,13 +31,13 @@ bool MacaronAnimLayer::init()
 void MacaronAnimLayer::createMacaron(int macaronIndex)
 {
     m_spritebatch->removeAllChildren();
- 
+ /*
     Size size = Director::getInstance()->getVisibleSize();
-    Sprite* macaron = Sprite::createWithSpriteFrameName(StringUtils::format("macaron%d_1.png", macaronIndex));
-    macaron->setScale(0.5f, 0.5f);
+    Sprite* macaron = Sprite::createWithSpriteFrameName(StringUtils::format("character_anim/macaron%d_1.png", macaronIndex));
+     macaron->setScale(0.5f, 0.5f);
     macaron->setAnchorPoint(Point(0.0f, 0.5f));
     macaron->setPosition(0.0f, size.height/2);
-    m_spritebatch->addChild(macaron);
+   m_spritebatch->addChild(macaron);
     
     Vector<SpriteFrame*> animFrames(3);
     for (int i = 1; i <= 3; i++)
@@ -53,7 +53,7 @@ void MacaronAnimLayer::createMacaron(int macaronIndex)
 
     Animation* anim = Animation::createWithSpriteFrames(animFrames, 0.2f);
     macaron->runAction(RepeatForever::create(Animate::create(anim)));
-	
+	*/
 	//music
 	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(StringUtils::format("Sounds/backgroundmusic_%d.mp3", macaronIndex).c_str());
 }

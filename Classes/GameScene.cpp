@@ -32,17 +32,23 @@ Scene* GameScene::createScene()
 
 void GameScene::menuMaCallback(Ref* pSender)
 {
-    
+	RapLayer * dsfa = (RapLayer*)getChildByTag(2);
+	dsfa->wordMa();
+
 }
 
 void GameScene::menuKaCallback(Ref* pSender)
 {
-    
+	RapLayer * dsfa = (RapLayer*)getChildByTag(2);
+	dsfa->wordKa();
 }
 
 void GameScene::menuRonCallback(Ref* pSender)
 {
-    
+	RapLayer * dsfa = (RapLayer*)getChildByTag(2);
+	dsfa->wordRon();
+
+
 }
 
 #define MENU_X 100.0f
@@ -73,6 +79,7 @@ void GameScene::createMacaronAnim()
     anim->setPosition(ANIM_X, 0.0f);
     animSize = anim->getBoundingBox().size;
     addChild(anim);
+	anim->setTag(1);
 }
 
 void GameScene::createRapboard()
@@ -80,6 +87,7 @@ void GameScene::createRapboard()
     auto rap = RapLayer::create();
     rap->setPosition(RAP_X, 0.0f);
     addChild(rap);
+	rap->setTag(2);
 }
 
 void GameScene::createYo()
