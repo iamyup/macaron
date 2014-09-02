@@ -37,6 +37,7 @@ void RapLayer::initBG()
 
 void RapLayer::wordMa()
 {
+<<<<<<< HEAD
 	removeAllChildren();
 	initBG();
 	MenuItem* item[12];
@@ -54,6 +55,8 @@ void RapLayer::wordMa()
 		this->addChild(menu[i]);
 	}
  /*   Vector<Sprite*> btns;
+=======
+>>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
     for(int i = 0; i < 4; i ++)
     {
         for(int j = 0; j < 3; j++)
@@ -67,8 +70,9 @@ void RapLayer::wordMa()
     }*/
 }
 
-void RapLayer::wordKa()
+void RapLayer::wordCa()
 {
+<<<<<<< HEAD
 	removeAllChildren();
 	initBG();
 	MenuItem* item[12];
@@ -85,10 +89,24 @@ void RapLayer::wordKa()
 
 		this->addChild(menu[i]);
 	}
+=======
+    for(int i = 0; i < 4; i ++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            MenuItem* word = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i*3+(j+1)), StringUtils::format("speach/word_ca%02d_pre.png", i*3+(j+1)), CC_CALLBACK_1(RapLayer::wordCaCallback, this));
+            //            img->setPosition(winSize.width/2, winSize.height/2+20
+            word->setAnchorPoint(Point(0.0f, 0.0f));
+            word->setPosition(WORD_X + WORD_WIDTH * j, WORD_Y + WORD_HEIGHT * i);
+            addChild(word);
+        }
+    }
+>>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
 }
 
 void RapLayer::wordRon()
 {
+<<<<<<< HEAD
 	removeAllChildren();
 	initBG();
 	MenuItem* item[12];
@@ -105,6 +123,19 @@ void RapLayer::wordRon()
 
 		this->addChild(menu[i]);
 	}
+=======
+    for(int i = 0; i < 4; i ++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            MenuItem* word = MenuItemImage::create(StringUtils::format("speach/word_ron%02d_nor.png", i*3+(j+1)), StringUtils::format("speach/word_ron%02d_pre.png", i*3+(j+1)), CC_CALLBACK_1(RapLayer::wordRonCallback, this));
+            //            img->setPosition(winSize.width/2, winSize.height/2+20
+            word->setAnchorPoint(Point(0.0f, 0.0f));
+            word->setPosition(WORD_X + WORD_WIDTH * j, WORD_Y + WORD_HEIGHT * i);
+            addChild(word);
+        }
+    }
+>>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
 }
 
 void RapLayer::wordMaCallback(cocos2d::Ref *pSender)
@@ -112,6 +143,7 @@ void RapLayer::wordMaCallback(cocos2d::Ref *pSender)
     CCLOG("=====================wordMaCallback======================");
 }
 
+<<<<<<< HEAD
 void RapLayer::MaEffect(cocos2d::Ref *sender){
 	MenuItem* item = (MenuItem*)sender;
 	int tag = item->getTag() % 100;
@@ -129,3 +161,21 @@ void RapLayer::RonEffect(cocos2d::Ref *sender){
 	int tag = item->getTag() % 100;
 	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ron_%02d.mp3", tag).c_str());
 }
+=======
+void RapLayer::wordCaCallback(cocos2d::Ref *pSender)
+{
+    CCLOG("=====================wordMaCallback======================");
+}
+
+void RapLayer::wordRonCallback(cocos2d::Ref *pSender)
+{
+    CCLOG("=====================wordMaCallback======================");
+}
+
+void RapLayer::whoEffect(Ref *sender){
+    MenuItem* item = (MenuItem*)sender;
+    int tag = item->getTag();
+    CCLOG("=====================whoEffect======================%d", tag);
+    CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/%02d.mp3", tag).c_str());
+}
+>>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae

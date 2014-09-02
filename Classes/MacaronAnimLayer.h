@@ -29,6 +29,7 @@ public:
 private:
     SpriteBatchNode* m_spritebatch;
     SpriteFrameCache* m_cache;
+    Size macaronSize;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

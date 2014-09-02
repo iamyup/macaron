@@ -15,11 +15,18 @@ bool MacaronAnimLayer::init()
     }
 
     //change background music, macaron, light
+<<<<<<< HEAD
     auto listener = EventListenerTouchOneByOne::create();
 	listener->setSwallowTouches(true);
 	listener->onTouchBegan = CC_CALLBACK_2(MacaronAnimLayer::onTouchBegan, this);
     listener->onTouchEnded = CC_CALLBACK_2(MacaronAnimLayer::onTouchEnded, this);
     Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
+=======
+//    auto listener = EventListenerTouchOneByOne::create();
+//    listener->onTouchBegan = CC_CALLBACK_2(MacaronAnimLayer::onTouchBegan, this);
+//    listener->onTouchEnded = CC_CALLBACK_2(MacaronAnimLayer::onTouchEnded, this);
+//    Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
+>>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
 
     m_spritebatch = SpriteBatchNode::create("character_anim/macaron.png");
     m_cache = SpriteFrameCache::getInstance();
@@ -37,7 +44,12 @@ void MacaronAnimLayer::createMacaron(int macaronIndex)
      macaron->setScale(0.5f, 0.5f);
     macaron->setAnchorPoint(Point(0.0f, 0.5f));
     macaron->setPosition(0.0f, size.height/2);
+<<<<<<< HEAD
    m_spritebatch->addChild(macaron);
+=======
+    macaronSize = macaron->getBoundingBox().size;
+    m_spritebatch->addChild(macaron);
+>>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
     
     Vector<SpriteFrame*> animFrames(3);
     for (int i = 1; i <= 3; i++)
@@ -67,6 +79,14 @@ bool MacaronAnimLayer::onTouchBegan(Touch *touch, Event *unused_event)
 void MacaronAnimLayer::onTouchEnded(Touch *touch, Event *unused_event)
 {
 	Point location = touch->getLocation();
+<<<<<<< HEAD
 	int index = rand()%3 + 1;
     createMacaron(index);
+=======
+    if (location.x > 0 && location.x < macaronSize.width)
+    {
+        int index = rand()%2 + 1;
+        createMacaron(index);
+    }
+>>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
 }
