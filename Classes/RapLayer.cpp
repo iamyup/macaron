@@ -37,14 +37,13 @@ void RapLayer::initBG()
 
 void RapLayer::wordMa()
 {
-<<<<<<< HEAD
 	removeAllChildren();
 	initBG();
 	MenuItem* item[12];
 	Menu* menu[3];
 
 	for (int i = 0; i < 12; i++){
-		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ma%02d_nor.png", i + 1), StringUtils::format("speach/word_ma%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::MaEffect, this));
+		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i + 1), StringUtils::format("speach/word_ca%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordMaCallback, this));
 		item[i]->setTag(100 + i + 1);
 	}
 	for (int i = 0; i < 3; i++){
@@ -54,9 +53,7 @@ void RapLayer::wordMa()
 
 		this->addChild(menu[i]);
 	}
- /*   Vector<Sprite*> btns;
-=======
->>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
+ /* Vector<Sprite*> btns;
     for(int i = 0; i < 4; i ++)
     {
         for(int j = 0; j < 3; j++)
@@ -72,14 +69,14 @@ void RapLayer::wordMa()
 
 void RapLayer::wordCa()
 {
-<<<<<<< HEAD
+
 	removeAllChildren();
 	initBG();
 	MenuItem* item[12];
 	Menu* menu[3];
 
 	for (int i = 0; i < 12; i++){
-		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i + 1), StringUtils::format("speach/word_ca%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::CaEffect, this));
+		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i + 1), StringUtils::format("speach/word_ca%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordCaCallback, this));
 		item[i]->setTag(100 + i + 1);
 	}
 	for (int i = 0; i < 3; i++){
@@ -89,31 +86,17 @@ void RapLayer::wordCa()
 
 		this->addChild(menu[i]);
 	}
-=======
-    for(int i = 0; i < 4; i ++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
-            MenuItem* word = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i*3+(j+1)), StringUtils::format("speach/word_ca%02d_pre.png", i*3+(j+1)), CC_CALLBACK_1(RapLayer::wordCaCallback, this));
-            //            img->setPosition(winSize.width/2, winSize.height/2+20
-            word->setAnchorPoint(Point(0.0f, 0.0f));
-            word->setPosition(WORD_X + WORD_WIDTH * j, WORD_Y + WORD_HEIGHT * i);
-            addChild(word);
-        }
-    }
->>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
 }
 
 void RapLayer::wordRon()
 {
-<<<<<<< HEAD
 	removeAllChildren();
 	initBG();
 	MenuItem* item[12];
 	Menu* menu[3];
 
 	for (int i = 0; i < 12; i++){
-		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ron%02d_nor.png", i + 1), StringUtils::format("speach/word_ron%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::RonEffect, this));
+		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ron%02d_nor.png", i + 1), StringUtils::format("speach/word_ron%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordRonCallback, this));
 		item[i]->setTag(100 + i + 1);
 	}
 	for (int i = 0; i < 3; i++){
@@ -123,59 +106,29 @@ void RapLayer::wordRon()
 
 		this->addChild(menu[i]);
 	}
-=======
-    for(int i = 0; i < 4; i ++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
-            MenuItem* word = MenuItemImage::create(StringUtils::format("speach/word_ron%02d_nor.png", i*3+(j+1)), StringUtils::format("speach/word_ron%02d_pre.png", i*3+(j+1)), CC_CALLBACK_1(RapLayer::wordRonCallback, this));
-            //            img->setPosition(winSize.width/2, winSize.height/2+20
-            word->setAnchorPoint(Point(0.0f, 0.0f));
-            word->setPosition(WORD_X + WORD_WIDTH * j, WORD_Y + WORD_HEIGHT * i);
-            addChild(word);
-        }
-    }
->>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
+
 }
 
 void RapLayer::wordMaCallback(cocos2d::Ref *pSender)
 {
-    CCLOG("=====================wordMaCallback======================");
+	MenuItem* item = (MenuItem*)pSender;
+	int tag = item->getTag() % 100;
+	CCLOG("=====================maEffect======================%d", tag);
+	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ma_%02d.m4a", tag).c_str());
 }
 
-<<<<<<< HEAD
-void RapLayer::MaEffect(cocos2d::Ref *sender){
-	MenuItem* item = (MenuItem*)sender;
-	int tag = item->getTag() % 100;
-	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ma_%02d.mp3", tag).c_str());
-}
 
-void RapLayer::CaEffect(cocos2d::Ref *sender){
-	MenuItem* item = (MenuItem*)sender;
-	int tag = item->getTag() % 100;
-	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ca_%2d.mp3", tag).c_str());
-}
-
-void RapLayer::RonEffect(cocos2d::Ref *sender){
-	MenuItem* item = (MenuItem*)sender;
-	int tag = item->getTag() % 100;
-	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ron_%02d.mp3", tag).c_str());
-}
-=======
 void RapLayer::wordCaCallback(cocos2d::Ref *pSender)
 {
-    CCLOG("=====================wordMaCallback======================");
+	MenuItem* item = (MenuItem*)pSender;
+	int tag = item->getTag() % 100;
+	CCLOG("=====================caEffect======================%d", tag);
+	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ca_%2d.m4a", tag).c_str());
 }
 
 void RapLayer::wordRonCallback(cocos2d::Ref *pSender)
 {
-    CCLOG("=====================wordMaCallback======================");
+	MenuItem* item = (MenuItem*)pSender;
+	int tag = item->getTag() % 100;
+	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ron_%02d.m4a", tag).c_str());
 }
-
-void RapLayer::whoEffect(Ref *sender){
-    MenuItem* item = (MenuItem*)sender;
-    int tag = item->getTag();
-    CCLOG("=====================whoEffect======================%d", tag);
-    CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/%02d.mp3", tag).c_str());
-}
->>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae

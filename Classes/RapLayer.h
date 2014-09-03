@@ -19,19 +19,9 @@ public:
 	void wordCa();
 	void wordRon();
     void wordMaCallback(Ref* pSender);
-<<<<<<< HEAD
-
-	void MaEffect(Ref *sender);
-	void CaEffect(Ref *sender);
-	void RonEffect(Ref *sender);
-
-=======
     void wordCaCallback(Ref* pSender);
     void wordRonCallback(Ref* pSender);
     
-	void whoEffect(Ref *sender);
-	
->>>>>>> 1f2cf6f10bf460f25a9b4ccb8d3c26b528da72ae
 	CREATE_FUNC(RapLayer);
 private:
     int i;

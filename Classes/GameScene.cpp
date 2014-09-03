@@ -32,21 +32,21 @@ Scene* GameScene::createScene()
 
 void GameScene::menuMaCallback(Ref* pSender)
 {
-	RapLayer * dsfa = (RapLayer*)getChildByTag(2);
-	dsfa->wordMa();
+	RapLayer * raplayer = (RapLayer*)getChildByTag(2);
+	raplayer->wordMa();
 
 }
 
 void GameScene::menuKaCallback(Ref* pSender)
 {
-	RapLayer * dsfa = (RapLayer*)getChildByTag(2);
-	dsfa->wordKa();
+	RapLayer * raplayer = (RapLayer*)getChildByTag(2);
+	raplayer->wordCa();
 }
 
 void GameScene::menuRonCallback(Ref* pSender)
 {
-	RapLayer * dsfa = (RapLayer*)getChildByTag(2);
-	dsfa->wordRon();
+	RapLayer * raplayer = (RapLayer*)getChildByTag(2);
+	raplayer->wordRon();
 
 
 }
