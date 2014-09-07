@@ -11,21 +11,34 @@ public:
     static const int RAINBOW_MACARON = 2;
 
 	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
-	virtual bool init();
+	virtual bool init(int index);
 
 	// implement the "static create()" method manually
 	cocos2d::Size visibleSize;
 	cocos2d::Vec2 origin;
 
     void createMacaron(int macaronIndex);
-
+    static MacaronAnimLayer* create(int macaronIndex)
+    {
+        MacaronAnimLayer *pRet = new MacaronAnimLayer();
+        if (pRet && pRet->init(macaronIndex))
+        {
+            pRet->autorelease();
+            return pRet;
+        }
+        else
+        {
+            delete pRet;
+            pRet = NULL;
+            return NULL;
+        }
+    }
+    
 	//change
 	bool onTouchBegan(Touch *touch, Event *unused_event);
-	void onTouchEnded(Touch *touch, Event *unused_event);
+//	void onTouchEnded(Touch *touch, Event *unused_event);
 	float touchst, touchen;
-	
-	CREATE_FUNC(MacaronAnimLayer);
-    
+   
 private:
     SpriteBatchNode* m_spritebatch;
     SpriteFrameCache* m_cache;

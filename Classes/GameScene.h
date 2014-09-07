@@ -2,6 +2,7 @@
 #define _GAME_SCENE_H_
 
 #include "cocos2d.h"
+#include "KamCordInt.h"
 USING_NS_CC;
 
 class GameScene : public cocos2d::Layer
@@ -22,6 +23,7 @@ public:
 private:
     Size menuSize;
     Size animSize;
+    KamCordInt m_kamcord;
 };
 
 #endif

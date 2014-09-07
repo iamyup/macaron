@@ -5,7 +5,7 @@ USING_NS_CC;
 using namespace cocos2d;
 
 // on "init" you need to initialize your instance
-bool MacaronAnimLayer::init()
+bool MacaronAnimLayer::init(int index)
 {
     //////////////////////////////
     // 1. super init first
@@ -18,12 +18,14 @@ bool MacaronAnimLayer::init()
 //    auto listener = EventListenerTouchOneByOne::create();
 //    listener->onTouchBegan = CC_CALLBACK_2(MacaronAnimLayer::onTouchBegan, this);
 //    listener->onTouchEnded = CC_CALLBACK_2(MacaronAnimLayer::onTouchEnded, this);
-//    Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
+//    Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 10);
 
     m_spritebatch = SpriteBatchNode::create("character_anim/macaron.png");
     m_cache = SpriteFrameCache::getInstance();
     m_cache->addSpriteFramesWithFile("character_anim/macaron.plist");
     addChild(m_spritebatch);
+
+    createMacaron(index);
     return true;
 }
 
@@ -52,16 +54,5 @@ void MacaronAnimLayer::createMacaron(int macaronIndex)
 
 bool MacaronAnimLayer::onTouchBegan(Touch *touch, Event *unused_event)
 {
-	Point location = touch->getLocation();
     return true;
-}
-
-void MacaronAnimLayer::onTouchEnded(Touch *touch, Event *unused_event)
-{
-	Point location = touch->getLocation();
-    if (location.x > 0 && location.x < macaronSize.width)
-    {
-        int index = rand()%2 + 1;
-        createMacaron(index);
-    }
 }

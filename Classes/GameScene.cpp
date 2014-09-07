@@ -16,6 +16,7 @@ bool GameScene::init()
     createRapboard();
     createYo();
 
+    m_kamcord.init();
 //    debugLine();
     return true;
 }
@@ -68,8 +69,7 @@ void GameScene::createMenu()
 
 void GameScene::createMacaronAnim()
 {
-    auto anim = MacaronAnimLayer::create();
-    anim->createMacaron(MacaronAnimLayer::GREEN_MACARON);
+    auto anim = MacaronAnimLayer::create(MacaronAnimLayer::GREEN_MACARON);
     anim->setPosition(ANIM_X, 0.0f);
     animSize = anim->getBoundingBox().size;
     addChild(anim);

@@ -27,6 +27,7 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "Kamcord.h"
 
 @implementation AppController
 
@@ -79,6 +80,7 @@ static AppDelegate s_sharedApplication;
 
     cocos2d::Application::getInstance()->run();
 
+    [Kamcord setDeveloperKey:@"RfM2hFLG1pbvozsqK83Uak8FvUfLgpFq3CKjzH6ayRg" developerSecret:@"BlkOqTvAqapvqINkT9K60b22BQ1bcZwRGjBPbSxX9tH" appName:@"244072" parentViewController:_viewController];
     return YES;
 }
 
