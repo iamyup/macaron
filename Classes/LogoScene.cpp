@@ -21,18 +21,19 @@ bool LogoScene::init()
 
 	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
 	cache->addSpriteFramesWithFile("character_anim/macaron.plist");
-
+	
 	Sprite* macaron = Sprite::createWithSpriteFrameName("macaron1-1.png");
 	macaron->setAnchorPoint(Point(0.0f, 0.0f));
 	spritebatch->addChild(macaron);
 	addChild(spritebatch);
-
-	Vector<SpriteFrame*> animFrames(3);
+	
+		Vector<SpriteFrame*> animFrames(3);
 	for (int i = 1; i <= 3; i++)
-	{
+		 {
 		SpriteFrame* frame = cache->getSpriteFrameByName(StringUtils::format("macaron1-%d.png", i));
 		animFrames.pushBack(frame);
 	}
+
     Animation* anim = Animation::createWithSpriteFrames(animFrames, 0.2f);
     macaron->runAction(RepeatForever::create(Animate::create(anim)));
 	
