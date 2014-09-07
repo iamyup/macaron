@@ -22,8 +22,6 @@ public:
     void wordCaCallback(Ref* pSender);
     void wordRonCallback(Ref* pSender);
     
-	void whoEffect(Ref *sender);
-	
 	CREATE_FUNC(RapLayer);
 private:
     int i;

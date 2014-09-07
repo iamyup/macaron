@@ -36,9 +36,9 @@ public:
     
 	//change
 	bool onTouchBegan(Touch *touch, Event *unused_event);
-//	void onTouchEnded(Touch *touch, Event *unused_event);
-	float touchst, touchen;
-   
+	void onTouchEnded(Touch *touch, Event *unused_event);
+	bool touchmacaron;
+
 private:
     SpriteBatchNode* m_spritebatch;
     SpriteFrameCache* m_cache;

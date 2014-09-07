@@ -33,17 +33,23 @@ Scene* GameScene::createScene()
 
 void GameScene::menuMaCallback(Ref* pSender)
 {
-    
+	RapLayer * raplayer = (RapLayer*)getChildByTag(2);
+	raplayer->wordMa();
+
 }
 
 void GameScene::menuKaCallback(Ref* pSender)
 {
-    
+	RapLayer * raplayer = (RapLayer*)getChildByTag(2);
+	raplayer->wordCa();
 }
 
 void GameScene::menuRonCallback(Ref* pSender)
 {
-    
+	RapLayer * raplayer = (RapLayer*)getChildByTag(2);
+	raplayer->wordRon();
+
+
 }
 
 #define MENU_X 100.0f
@@ -73,6 +79,7 @@ void GameScene::createMacaronAnim()
     anim->setPosition(ANIM_X, 0.0f);
     animSize = anim->getBoundingBox().size;
     addChild(anim);
+	anim->setTag(1);
 }
 
 void GameScene::createRapboard()
@@ -80,6 +87,7 @@ void GameScene::createRapboard()
     auto rap = RapLayer::create();
     rap->setPosition(RAP_X, 0.0f);
     addChild(rap);
+	rap->setTag(2);
 }
 
 void GameScene::createYo()
@@ -131,4 +139,18 @@ void GameScene::debugLine()
     };
     menuRectNode->drawPolygon(menuRect, 4, Color4F(0,0,0,0), 3, Color4F(0.2f,0.2f,0.2f,1));
     addChild(menuRectNode);
+}
+
+
+void GameScene::onKeyReleased(cocos2d::EventKeyboard::KeyCode keycode, cocos2d::Event *event)
+{
+	if (keycode == EventKeyboard::KeyCode::KEY_BACK) {
+
+		if (GameScene::checkonemore)
+			Director::getInstance()->end();
+		else
+			GameScene::checkonemore = true;
+	}
+	else
+		GameScene::checkonemore = false;
 }
