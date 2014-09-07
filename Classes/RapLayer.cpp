@@ -43,7 +43,7 @@ void RapLayer::wordMa()
 	Menu* menu[3];
 
 	for (int i = 0; i < 12; i++){
-		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i + 1), StringUtils::format("speach/word_ca%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordMaCallback, this));
+		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i + 1), StringUtils::format("speach/word_ma%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordMaCallback, this));
 		item[i]->setTag(100 + i + 1);
 	}
 	for (int i = 0; i < 3; i++){

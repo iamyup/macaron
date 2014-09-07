@@ -48,16 +48,13 @@ void MacaronAnimLayer::createMacaron(int macaronIndex)
         SpriteFrame* frame = m_cache->getSpriteFrameByName(StringUtils::format("macaron%d_%d.png", macaronIndex, i));
         animFrames.pushBack(frame);
     }
-	if (macaronIndex == 3)
-	{
-		SpriteFrame* frame = m_cache->getSpriteFrameByName(StringUtils::format("macaron%d_4.png", macaronIndex));
-		animFrames.pushBack(frame);
-	}
 
     Animation* anim = Animation::createWithSpriteFrames(animFrames, 0.2f);
     macaron->runAction(RepeatForever::create(Animate::create(anim)));
 	
 	//music
+	if (CocosDenshion::SimpleAudioEngine::sharedEngine()->isBackgroundMusicPlaying())
+		CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic(true);
 	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(StringUtils::format("Sounds/backgroundmusic_%d.mp3", macaronIndex).c_str());
 }
 
