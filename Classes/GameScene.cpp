@@ -16,9 +16,13 @@ bool GameScene::init()
     createRapboard();
     createYo();
 
+	this->setKeypadEnabled(true);
+	this->setAccelerometerEnabled(true);
+	
 //    debugLine();
     return true;
 }
+
 
 Scene* GameScene::createScene()
 {
@@ -56,6 +60,7 @@ void GameScene::menuRonCallback(Ref* pSender)
 #define RAP_X 564.5f
 #define YO_X 1120.0f
 #define YO_Y 580.0f
+
 void GameScene::createMenu()
 {
     Size winSize = Director::getInstance()->getWinSize();
@@ -74,8 +79,7 @@ void GameScene::createMenu()
 
 void GameScene::createMacaronAnim()
 {
-    auto anim = MacaronAnimLayer::create();
-    anim->createMacaron(MacaronAnimLayer::GREEN_MACARON);
+    auto anim = MacaronAnimLayer::create(MacaronAnimLayer::GREEN_MACARON);
     anim->setPosition(ANIM_X, 0.0f);
     animSize = anim->getBoundingBox().size;
     addChild(anim);
@@ -141,6 +145,75 @@ void GameScene::debugLine()
     addChild(menuRectNode);
 }
 
+void GameScene::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event)
+{
+	CCDirector* pDir = CCDirector::sharedDirector();
+	float x = acc->x * 9.81f;
+	float y = acc->y * 9.81f;
+	float z = acc->z * 9.81f;
+	if (((x < 1.7) && (x>-1.7)) && (y <1.7) && (y>-1.7)){
+		chu = false;
+	}
+
+	int s = 4;
+	if (!chu ){//&& (z>1)){
+		if ((x < -s) && (y > s)){
+			CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/yo_1.m4a");
+			yoPopup(1);
+			chu = true;
+		}if ((x > s) && (y > s)){
+			CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/yo_2.m4a");
+			yoPopup(2);
+			chu = true;
+		}
+		if ((x < -s) && (y < -s)){
+			CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/yo_3.m4a");
+			yoPopup(3);
+			chu = true;
+		}
+		if ((x > s) && (y < -s)){
+			CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/yo_4.m4a");
+			yoPopup(4);
+			chu = true;
+		}
+		
+	}
+}
+
+void GameScene::yoPopup(int num)
+{
+	
+	switch (num){
+	case 1:
+		 pop = Sprite::create("popup_01_left_top.png");
+		break;
+	case 2:
+		 pop = Sprite::create("popup_02_right_top.png");
+		break;
+	case 3:
+		pop = Sprite::create("popup_03_left_bottom.png");
+		break;
+	case 4:
+		pop = Sprite::create("popup_04_right_bottom.png");
+		break;
+	}
+	if (pop != NULL)
+	{
+		Size winSize = Director::getInstance()->getWinSize();
+
+		addChild(pop);
+		pop->setAnchorPoint(Vec2(0.5, 0.5));
+		pop->setPosition(winSize.width/2,winSize.height/2);
+		pop->setScale(0.5, 0.5);
+		pop->setTag(4);
+		this->schedule(schedule_selector(GameScene::popSchedule), 0.5f);
+	}
+}
+void GameScene::popSchedule(float delta)
+{
+	if (getChildByTag(4) != NULL)
+		this->removeChildByTag(4);
+}
 
 void GameScene::onKeyReleased(cocos2d::EventKeyboard::KeyCode keycode, cocos2d::Event *event)
 {

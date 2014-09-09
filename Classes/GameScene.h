@@ -2,6 +2,7 @@
 #define _GAME_SCENE_H_
 
 #include "cocos2d.h"
+
 USING_NS_CC;
 
 class GameScene : public cocos2d::Layer
@@ -20,13 +21,24 @@ public:
     void debugLine();
 	CREATE_FUNC(GameScene);
 
+	//popup
+	void yoPopup(int num);
+	Sprite* pop = NULL;
+	void popSchedule(float delta);
+	int nNum = 0;
+
 	//back key
 	void onKeyReleased(cocos2d::EventKeyboard::KeyCode keycode, cocos2d::Event *event);
 	bool checkonemore = false;
 
+	//acceleration
+	virtual void onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event);
+	bool chu = false;
+
 private:
     Size menuSize;
     Size animSize;
+ 
 };
 
 #endif
