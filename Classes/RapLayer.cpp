@@ -1,5 +1,6 @@
 #include "RapLayer.h"
 #include "SimpleAudioEngine.h"
+#include "GameScene.h"
 USING_NS_CC;
 
 #define WORD_X 76
@@ -43,7 +44,7 @@ void RapLayer::wordMa()
 	Menu* menu[3];
 
 	for (int i = 0; i < 12; i++){
-		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i + 1), StringUtils::format("speach/word_ma%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordMaCallback, this));
+		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ma%02d_nor.png", i + 1), StringUtils::format("speach/word_ma%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordMaCallback, this));
 		item[i]->setTag(100 + i + 1);
 	}
 	for (int i = 0; i < 3; i++){
@@ -113,7 +114,7 @@ void RapLayer::wordMaCallback(cocos2d::Ref *pSender)
 {
 	MenuItem* item = (MenuItem*)pSender;
 	int tag = item->getTag() % 100;
-	CCLOG("=====================maEffect======================%d", tag);
+	notiGame(StringUtils::format("%d", item->getTag()));
 	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ma_%02d.m4a", tag).c_str());
 }
 
@@ -122,7 +123,7 @@ void RapLayer::wordCaCallback(cocos2d::Ref *pSender)
 {
 	MenuItem* item = (MenuItem*)pSender;
 	int tag = item->getTag() % 100;
-	CCLOG("=====================caEffect======================%d", tag);
+	notiGame(StringUtils::format("%d", item->getTag()));
 	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ca_%2d.m4a", tag).c_str());
 }
 
@@ -130,5 +131,14 @@ void RapLayer::wordRonCallback(cocos2d::Ref *pSender)
 {
 	MenuItem* item = (MenuItem*)pSender;
 	int tag = item->getTag() % 100;
+	notiGame(StringUtils::format("%d", item->getTag()));
 	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ron_%02d.m4a", tag).c_str());
+}
+
+void RapLayer::notiGame(std::string noti){
+
+	GameScene::ck = false;
+	String* notiStr = String::create(noti.c_str());
+	NotificationCenter::getInstance()->postNotification("notigame", notiStr);
+
 }

@@ -22,6 +22,8 @@ public:
     void wordCaCallback(Ref* pSender);
     void wordRonCallback(Ref* pSender);
     
+	void notiGame(std::string noti);
+
 	CREATE_FUNC(RapLayer);
 private:
     int i;

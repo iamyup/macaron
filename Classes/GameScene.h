@@ -27,6 +27,10 @@ public:
 	void popSchedule(float delta);
 	int nNum = 0;
 
+	//rap sign
+	void doNotification(CCObject *obj);
+	static bool ck;
+
 	//back key
 	void onKeyReleased(cocos2d::EventKeyboard::KeyCode keycode, cocos2d::Event *event);
 	bool checkonemore = false;

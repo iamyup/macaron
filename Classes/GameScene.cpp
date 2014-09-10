@@ -2,12 +2,16 @@
 #include "MacaronAnimLayer.h"
 #include "RapLayer.h"
 
+bool GameScene::ck;
+
 bool GameScene::init()
 {
     if (Layer::init() == false)
     {
         return false;
     }
+	//back key
+	this->setKeypadEnabled(true);
 
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     
@@ -19,6 +23,9 @@ bool GameScene::init()
 	this->setKeypadEnabled(true);
 	this->setAccelerometerEnabled(true);
 	
+	//get sign
+	NotificationCenter::getInstance()->addObserver(this, callfuncO_selector(GameScene::doNotification), "notigame", NULL);
+
 //    debugLine();
     return true;
 }
@@ -51,6 +58,22 @@ void GameScene::menuRonCallback(Ref* pSender)
 {
 	RapLayer * raplayer = (RapLayer*)getChildByTag(2);
 	raplayer->wordRon();
+
+
+}
+void GameScene::doNotification(CCObject *obj)
+{
+
+	CCString *noti = (CCString*)obj;
+	Director::getInstance()->resume();
+	int tag = noti->intValue();
+	if (tag > 0 && (tag < 1000))
+		if (!GameScene::ck)
+		{
+		GameScene::ck = true;
+		MacaronAnimLayer* mac = (MacaronAnimLayer*)getChildByTag(1);
+		mac->wordMacaronAnim(noti->intValue());
+		}
 
 
 }

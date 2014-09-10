@@ -2,6 +2,7 @@
 #include "HelloWorldScene.h"
 #include "LogoScene.h"
 #include "GameScene.h"
+
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -33,6 +34,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // create a scene. it's an autorelease object
     auto scene = LogoScene::createScene();
+    
     
     // run
     director->runWithScene(scene);

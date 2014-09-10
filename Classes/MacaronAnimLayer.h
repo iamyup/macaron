@@ -33,6 +33,10 @@ public:
             return NULL;
         }
     }
+
+	//word anim
+	void wordMacaronAnim(int tag);
+	int macaronNum;
     
 	//change
 	bool onTouchBegan(Touch *touch, Event *unused_event);

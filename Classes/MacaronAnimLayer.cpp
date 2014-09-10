@@ -33,6 +33,7 @@ bool MacaronAnimLayer::init(int index)
 
 void MacaronAnimLayer::createMacaron(int macaronIndex)
 {
+	macaronNum = macaronIndex;
     m_spritebatch->removeAllChildren();
 
     Size size = Director::getInstance()->getVisibleSize();
@@ -63,6 +64,35 @@ void MacaronAnimLayer::createMacaron(int macaronIndex)
 	if (CocosDenshion::SimpleAudioEngine::sharedEngine()->isBackgroundMusicPlaying())
 		CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic(true);
 	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(StringUtils::format("Sounds/backgroundmusic_%d.mp3", macaronIndex).c_str());
+}
+
+void MacaronAnimLayer::wordMacaronAnim(int tag){
+	
+	CCLog("11111111111111111111111111111111word_anim/word_ani_%d_%d_%02d_1.png", macaronNum, tag / 100, tag % 100);
+
+	bool act = false;
+	switch (macaronNum)
+	{
+	case 1:
+		if ((tag == 208) || (tag == 212) || (tag == 303) || (tag == 308))
+			act = true;
+		break;
+	case 2:
+		if ((tag == 209) || (tag == 212) || (tag == 301) || (tag == 308))
+			act = true;
+		break;
+	case 3:
+		if ((tag == 103) || (tag == 204) || (tag == 210))
+			act = true;
+		break;
+	default:
+		break;
+	}
+
+	if (act){
+		//파일 이름 : word_ani_(macaronNumber)_(ma || ca || ron)_(word number)_(1,2action).png
+		CCLog("word_anim/word_ani_%d_%d_%02d_1.png", macaronNum, tag / 100, tag % 100);
+	}
 }
 
 bool MacaronAnimLayer::onTouchBegan(Touch *touch, Event *unused_event)
