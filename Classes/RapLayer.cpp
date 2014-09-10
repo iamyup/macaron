@@ -124,7 +124,7 @@ void RapLayer::wordCaCallback(cocos2d::Ref *pSender)
 	MenuItem* item = (MenuItem*)pSender;
 	int tag = item->getTag() % 100;
 	notiGame(StringUtils::format("%d", item->getTag()));
-	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ca_%2d.m4a", tag).c_str());
+	CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(StringUtils::format("Sounds/ca_%02d.m4a", tag).c_str());
 }
 
 void RapLayer::wordRonCallback(cocos2d::Ref *pSender)
