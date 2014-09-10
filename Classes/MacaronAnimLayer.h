@@ -37,7 +37,8 @@ public:
 	//word anim
 	void wordMacaronAnim(int tag);
 	int macaronNum;
-    
+	void wordSchedule(float delta);
+
 	//change
 	bool onTouchBegan(Touch *touch, Event *unused_event);
 	void onTouchEnded(Touch *touch, Event *unused_event);

@@ -78,7 +78,7 @@ void RapLayer::wordCa()
 
 	for (int i = 0; i < 12; i++){
 		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ca%02d_nor.png", i + 1), StringUtils::format("speach/word_ca%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordCaCallback, this));
-		item[i]->setTag(100 + i + 1);
+		item[i]->setTag(200 + i + 1);
 	}
 	for (int i = 0; i < 3; i++){
 		menu[i] = Menu::create(item[0 + i], item[3 + i], item[6 + i], item[9 + i], NULL);
@@ -98,7 +98,7 @@ void RapLayer::wordRon()
 
 	for (int i = 0; i < 12; i++){
 		item[i] = MenuItemImage::create(StringUtils::format("speach/word_ron%02d_nor.png", i + 1), StringUtils::format("speach/word_ron%02d_pre.png", i + 1), CC_CALLBACK_1(RapLayer::wordRonCallback, this));
-		item[i]->setTag(100 + i + 1);
+		item[i]->setTag(300 + i + 1);
 	}
 	for (int i = 0; i < 3; i++){
 		menu[i] = Menu::create(item[0 + i], item[3 + i], item[6 + i], item[9 + i], NULL);
